@@ -1,6 +1,6 @@
 // ===== TILMA AI — APP.JS =====
-// Posts live in data/prompt.json, data/coding.json, data/news.json
-// To add, edit, or remove a post — update the relevant JSON file and push.
+// Prompt + Coding posts: data/prompt.json & data/coding.json (edit & push to update)
+// News posts: fetched live from Hacker News + RSS on every section open
 
 // ─── LEADERBOARD (update from artificialanalysis.ai/leaderboards/models) ─────
 const LEADERBOARD = {
@@ -14,16 +14,35 @@ const LEADERBOARD = {
   ],
 };
 
+// ─── CONFIG ───────────────────────────────────────────────────────────────────
+const PAGE_SIZE = 5;
+
+const AI_KEYWORDS = [
+  'AI', 'artificial intelligence', 'machine learning', 'LLM', 'GPT', 'Claude',
+  'Gemini', 'OpenAI', 'Anthropic', 'DeepSeek', 'language model', 'neural',
+  'chatbot', 'agent', 'automation', 'robotics', 'generative', 'transformer',
+  'inference', 'benchmark', 'Mistral', 'Llama', 'xAI', 'Grok', 'Copilot',
+  'foundation model', 'multimodal', 'reasoning', 'model release',
+];
+
+const RSS_FEEDS = [
+  { url: 'https://feeds.feedburner.com/TechCrunch',       source: 'TechCrunch',      color: 'yellow' },
+  { url: 'https://www.technologyreview.com/feed/',         source: 'MIT Tech Review', color: 'blue'   },
+];
+
+const HN_COLORS = ['orange', 'purple', 'green', 'blue', 'red', 'yellow'];
+
 // ─── SECTION META ─────────────────────────────────────────────────────────────
 const SECTIONS = {
-  prompt: { label: 'Prompt Engineering', num: '01', accent: 'prompt', file: 'data/prompt.json' },
-  coding: { label: 'AI Coding',          num: '02', accent: 'coding', file: 'data/coding.json' },
-  news:   { label: 'AI News',            num: '03', accent: 'news',   file: 'data/news.json'   },
+  prompt: { label: 'Prompt Engineering', num: '01', accent: 'prompt', file: 'data/prompt.json', live: false },
+  coding: { label: 'AI Coding',          num: '02', accent: 'coding', file: 'data/coding.json', live: false },
+  news:   { label: 'AI News',            num: '03', accent: 'news',   file: 'data/news.json',   live: true  },
 };
 
 // ─── STATE ────────────────────────────────────────────────────────────────────
 let currentSection = null;
-const POSTS_CACHE = {};   // keyed by section, populated on first open
+let currentPage    = 1;
+const POSTS_CACHE  = {};  // { section: [posts] }
 
 // ─── DOM REFS ─────────────────────────────────────────────────────────────────
 const splashEl       = document.getElementById('splash');
@@ -31,10 +50,15 @@ const sectionPageEl  = document.getElementById('section-page');
 const postPageEl     = document.getElementById('post-page');
 const postsGridEl    = document.getElementById('posts-grid');
 const emptyStateEl   = document.getElementById('empty-state');
+const paginatorEl    = document.getElementById('paginator');
+const pagePrevEl     = document.getElementById('page-prev');
+const pageNextEl     = document.getElementById('page-next');
+const pagePillsEl    = document.getElementById('page-pills');
 const sectionNumEl   = document.getElementById('section-num');
 const sectionTitleEl = document.getElementById('section-title');
 const postArticleEl  = document.getElementById('post-article');
 const postCatTagEl   = document.getElementById('post-cat-tag');
+const refreshBtn     = document.getElementById('refresh-btn');
 
 // ─── NAVIGATION ───────────────────────────────────────────────────────────────
 function showPage(pageEl) {
@@ -57,6 +81,7 @@ document.getElementById('post-back-btn').addEventListener('click', () => {
 
 async function openSection(section) {
   currentSection = section;
+  currentPage    = 1;
   const meta = SECTIONS[section];
   sectionNumEl.textContent = meta.num;
   sectionTitleEl.textContent = meta.label;
@@ -65,11 +90,20 @@ async function openSection(section) {
   await renderPosts(section);
 }
 
-// ─── FETCH POSTS ──────────────────────────────────────────────────────────────
-async function fetchPosts(section) {
+// ─── REFRESH BUTTON ───────────────────────────────────────────────────────────
+refreshBtn.addEventListener('click', async () => {
+  if (refreshBtn.classList.contains('spinning')) return;
+  refreshBtn.classList.add('spinning');
+  delete POSTS_CACHE[currentSection];  // bust cache for this section
+  currentPage = 1;
+  await renderPosts(currentSection);
+  refreshBtn.classList.remove('spinning');
+});
+
+// ─── FETCH: JSON (prompt / coding) ────────────────────────────────────────────
+async function fetchJSON(section) {
   if (POSTS_CACHE[section]) return POSTS_CACHE[section];
   try {
-    // Cache-bust so GitHub Pages always serves the latest JSON after a push
     const res = await fetch(`${SECTIONS[section].file}?v=${Date.now()}`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const posts = await res.json();
@@ -81,22 +115,158 @@ async function fetchPosts(section) {
   }
 }
 
-// ─── RENDER POSTS ─────────────────────────────────────────────────────────────
+// ─── FETCH: LIVE NEWS (HN + RSS via rss2json) ─────────────────────────────────
+function isAIRelated(text) {
+  const lower = (text || '').toLowerCase();
+  return AI_KEYWORDS.some(kw => lower.includes(kw.toLowerCase()));
+}
+
+function toISODate(dateStr) {
+  try { return new Date(dateStr).toISOString().split('T')[0]; }
+  catch { return new Date().toISOString().split('T')[0]; }
+}
+
+function truncate(str, n) {
+  const clean = (str || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+  return clean.length > n ? clean.slice(0, n).replace(/\s\S*$/, '') + '…' : clean;
+}
+
+async function fetchHackerNews() {
+  try {
+    const ids = await fetch('https://hacker-news.firebaseio.com/v0/topstories.json')
+      .then(r => r.json());
+    const stories = [];
+    for (const id of ids.slice(0, 80)) {
+      if (stories.length >= 10) break;
+      try {
+        const item = await fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`)
+          .then(r => r.json());
+        if (item?.title && item?.url && isAIRelated(item.title)) {
+          stories.push({
+            id:       `hn-${item.id}`,
+            title:    item.title,
+            subtitle: `${item.score} points · Hacker News`,
+            color:    HN_COLORS[stories.length % HN_COLORS.length],
+            date:     toISODate(new Date(item.time * 1000).toISOString()),
+            url:      item.url,
+            score:    item.score,
+            source:   'Hacker News',
+            content:  buildNewsContent({ title: item.title, url: item.url, source: 'Hacker News', score: item.score, date: toISODate(new Date(item.time * 1000).toISOString()) }),
+          });
+        }
+      } catch { /* skip */ }
+    }
+    return stories;
+  } catch (err) {
+    console.warn('HN fetch failed:', err.message);
+    return [];
+  }
+}
+
+async function fetchRSSFeed(feed) {
+  try {
+    const proxy = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}&count=20`;
+    const data  = await fetch(proxy).then(r => r.json());
+    if (data.status !== 'ok') throw new Error('rss2json error');
+    return data.items
+      .filter(item => isAIRelated((item.title || '') + ' ' + (item.description || '')))
+      .slice(0, 8)
+      .map((item, i) => ({
+        id:      `rss-${feed.source.replace(/\s/g,'-').toLowerCase()}-${Date.now()}-${i}`,
+        title:   (item.title || '').replace(/\s+/g, ' ').trim(),
+        subtitle: truncate(item.description, 130),
+        color:   feed.color,
+        date:    toISODate(item.pubDate),
+        url:     item.link || '',
+        score:   0,
+        source:  feed.source,
+        content: buildNewsContent({ title: item.title, subtitle: truncate(item.description, 200), url: item.link, source: feed.source, date: toISODate(item.pubDate) }),
+      }));
+  } catch (err) {
+    console.warn(`RSS fetch failed (${feed.source}):`, err.message);
+    return [];
+  }
+}
+
+function buildNewsContent({ title, subtitle, url, source, score, date }) {
+  const lines = [];
+  if (subtitle && source !== 'Hacker News') lines.push(`# Summary\n\n${subtitle}\n`);
+  lines.push(`# Story Details\n`);
+  lines.push(`* **Source:** ${source}`);
+  lines.push(`* **Published:** ${date}`);
+  if (score) lines.push(`* **HN Score:** ${score} points`);
+  lines.push('');
+  if (url) lines.push(`**[Read the full story →](${url})**`);
+  return lines.join('\n');
+}
+
+async function fetchLiveNews() {
+  if (POSTS_CACHE['news']) return POSTS_CACHE['news'];
+
+  // Fetch HN + all RSS feeds in parallel
+  const [hnStories, ...rssResults] = await Promise.all([
+    fetchHackerNews(),
+    ...RSS_FEEDS.map(fetchRSSFeed),
+  ]);
+
+  const rssStories = rssResults.flat();
+
+  if (hnStories.length === 0 && rssStories.length === 0) {
+    // All live fetches failed — fall back to news.json
+    console.warn('All live fetches failed — loading fallback news.json');
+    try {
+      const res = await fetch(`data/news.json?v=${Date.now()}`);
+      const posts = await res.json();
+      POSTS_CACHE['news'] = posts;
+      return posts;
+    } catch {
+      return [];
+    }
+  }
+
+  // Sort: RSS editorial first, then HN by score
+  const all = [...rssStories, ...hnStories].sort((a, b) => {
+    if (a.source !== 'Hacker News' && b.source === 'Hacker News') return -1;
+    if (a.source === 'Hacker News' && b.source !== 'Hacker News') return 1;
+    return (b.score || 0) - (a.score || 0);
+  });
+
+  // Deduplicate by id
+  const seen = new Set();
+  const posts = all.filter(p => seen.has(p.id) ? false : seen.add(p.id));
+
+  POSTS_CACHE['news'] = posts;
+  return posts;
+}
+
+// ─── FETCH DISPATCHER ────────────────────────────────────────────────────────
+async function fetchPosts(section) {
+  return SECTIONS[section].live ? fetchLiveNews() : fetchJSON(section);
+}
+
+// ─── RENDER POSTS + PAGINATION ────────────────────────────────────────────────
 async function renderPosts(section) {
   postsGridEl.innerHTML = '<div class="loading-state">Loading…</div>';
-  emptyStateEl.style.display = 'none';
   postsGridEl.style.display = 'grid';
+  emptyStateEl.style.display = 'none';
+  paginatorEl.style.display = 'none';
 
-  const posts = await fetchPosts(section);
+  const allPosts = await fetchPosts(section);
   postsGridEl.innerHTML = '';
 
-  if (posts.length === 0) {
+  if (allPosts.length === 0) {
     emptyStateEl.style.display = 'flex';
     postsGridEl.style.display = 'none';
     return;
   }
 
-  posts.forEach((post, idx) => {
+  const totalPages = Math.ceil(allPosts.length / PAGE_SIZE);
+  currentPage      = Math.min(currentPage, totalPages);
+  const start      = (currentPage - 1) * PAGE_SIZE;
+  const pagePosts  = allPosts.slice(start, start + PAGE_SIZE);
+
+  pagePosts.forEach((post, idx) => {
+    const globalIdx = start + idx;
     const card = document.createElement('div');
     card.className = 'post-card';
     card.dataset.color = post.color || 'green';
@@ -109,20 +279,61 @@ async function renderPosts(section) {
       <div class="post-card-subtitle">${escHtml(post.subtitle || '')}</div>
       <div class="post-card-read">Read post →</div>
     `;
-    card.addEventListener('click', () => openPost(section, idx));
+    card.addEventListener('click', () => openPost(section, globalIdx));
     postsGridEl.appendChild(card);
   });
+
+  // Render paginator only if more than one page
+  if (totalPages > 1) {
+    paginatorEl.style.display = 'flex';
+    pagePrevEl.disabled = currentPage === 1;
+    pageNextEl.disabled = currentPage === totalPages;
+
+    pagePillsEl.innerHTML = '';
+    for (let i = 1; i <= totalPages; i++) {
+      const pill = document.createElement('button');
+      pill.className = 'page-pill' + (i === currentPage ? ' active' : '');
+      pill.textContent = i;
+      pill.addEventListener('click', () => goToPage(section, i));
+      pagePillsEl.appendChild(pill);
+    }
+  }
 }
+
+function goToPage(section, page) {
+  currentPage = page;
+  renderPosts(section);
+  sectionPageEl.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+pagePrevEl.addEventListener('click', () => {
+  if (currentPage > 1) goToPage(currentSection, currentPage - 1);
+});
+pageNextEl.addEventListener('click', () => {
+  const total = Math.ceil((POSTS_CACHE[currentSection]?.length || 0) / PAGE_SIZE);
+  if (currentPage < total) goToPage(currentSection, currentPage + 1);
+});
 
 // ─── OPEN POST ────────────────────────────────────────────────────────────────
 async function openPost(section, idx) {
   const posts = await fetchPosts(section);
   const post  = posts[idx];
   const meta  = SECTIONS[section];
+
+  // News posts that have a URL get a clickable external link header
+  const externalLink = post.url
+    ? `<a class="post-source-link" href="${escHtml(post.url)}" target="_blank" rel="noopener">
+         ${escHtml(post.source || 'Source')} ↗
+       </a>`
+    : '';
+
   postCatTagEl.textContent = meta.label;
   postArticleEl.innerHTML = `
     <h1 class="article-title">${escHtml(post.title)}</h1>
-    <div class="article-subtitle">${escHtml(post.subtitle || '')} — ${formatDate(post.date)}</div>
+    <div class="article-subtitle">
+      ${escHtml(post.subtitle || '')} — ${formatDate(post.date)}
+      ${externalLink}
+    </div>
     <div class="article-body">${markdownToHtml(post.content || '')}</div>
   `;
   showPage(postPageEl);
@@ -140,6 +351,8 @@ function markdownToHtml(md) {
     .replace(/^&gt; (.+)$/gm, '<div class="callout">$1</div>')
     .replace(/`([^`]+)`/g, '<code>$1</code>')
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    // Markdown links [text](url)
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
     .replace(/^\* (.+)$/gm, '<li>$1</li>');
 
   html = html.replace(/(<li>.*<\/li>\n?)+/gs, match => `<ul>${match}</ul>`);
@@ -149,7 +362,7 @@ function markdownToHtml(md) {
   for (const line of lines) {
     const trimmed = line.trim();
     if (!trimmed) { result.push(''); continue; }
-    const isBlock = /^<(h[1-6]|ul|li|div|hr|blockquote)/.test(trimmed);
+    const isBlock = /^<(h[1-6]|ul|li|div|hr|blockquote|a)/.test(trimmed);
     result.push(isBlock ? trimmed : `<p>${trimmed}</p>`);
   }
   return result.join('\n');

@@ -62,6 +62,7 @@
         <span class="section-num" id="section-num"></span>
         <h1 class="section-title" id="section-title"></h1>
       </div>
+      <button class="refresh-btn" id="refresh-btn" title="Fetch latest">↻</button>
     </div>
 
     <div class="posts-grid" id="posts-grid"></div>
@@ -69,6 +70,12 @@
     <div class="empty-state" id="empty-state" style="display:none">
       <div class="empty-icon">◌</div>
       <p>No posts yet.</p>
+    </div>
+
+    <div class="paginator" id="paginator" style="display:none">
+      <button class="page-btn" id="page-prev">←</button>
+      <div class="page-pills" id="page-pills"></div>
+      <button class="page-btn" id="page-next">→</button>
     </div>
   </div>
 
