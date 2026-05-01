@@ -26,8 +26,12 @@ const AI_KEYWORDS = [
 ];
 
 const RSS_FEEDS = [
-  { url: 'https://feeds.feedburner.com/TechCrunch',       source: 'TechCrunch',      color: 'yellow' },
-  { url: 'https://www.technologyreview.com/feed/',         source: 'MIT Tech Review', color: 'blue'   },
+  // TechCrunch AI-specific tag feed (direct, not FeedBurner which was shut down in 2023)
+  { url: 'https://techcrunch.com/category/artificial-intelligence/feed/', source: 'TechCrunch', color: 'yellow' },
+  // VentureBeat — reliable feed, strong AI coverage
+  { url: 'https://venturebeat.com/feed/',                                 source: 'VentureBeat', color: 'blue'   },
+  // Wired AI section
+  { url: 'https://www.wired.com/feed/category/artificial-intelligence/latest/rss', source: 'Wired', color: 'purple' },
 ];
 
 const HN_COLORS = ['orange', 'purple', 'green', 'blue', 'red', 'yellow'];
@@ -164,26 +168,50 @@ async function fetchHackerNews() {
 }
 
 async function fetchRSSFeed(feed) {
+  const proxy = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}&count=20`;
   try {
-    const proxy = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}&count=20`;
-    const data  = await fetch(proxy).then(r => r.json());
-    if (data.status !== 'ok') throw new Error('rss2json error');
-    return data.items
+    const res = await fetch(proxy);
+
+    // Log the HTTP status so broken feeds are immediately visible in the console
+    if (!res.ok) {
+      console.warn(`[RSS] ${feed.source} — HTTP ${res.status} (${res.statusText}) for ${feed.url}`);
+      return [];
+    }
+
+    const data = await res.json();
+
+    // rss2json returns status:'error' with a message when it can't parse the feed
+    if (data.status !== 'ok') {
+      console.warn(`[RSS] ${feed.source} — rss2json error: "${data.message || 'unknown'}" for ${feed.url}`);
+      return [];
+    }
+
+    if (!data.items?.length) {
+      console.warn(`[RSS] ${feed.source} — feed returned 0 items`);
+      return [];
+    }
+
+    const filtered = data.items
       .filter(item => isAIRelated((item.title || '') + ' ' + (item.description || '')))
-      .slice(0, 8)
-      .map((item, i) => ({
-        id:      `rss-${feed.source.replace(/\s/g,'-').toLowerCase()}-${Date.now()}-${i}`,
-        title:   (item.title || '').replace(/\s+/g, ' ').trim(),
-        subtitle: truncate(item.description, 130),
-        color:   feed.color,
-        date:    toISODate(item.pubDate),
-        url:     item.link || '',
-        score:   0,
-        source:  feed.source,
-        content: buildNewsContent({ title: item.title, subtitle: truncate(item.description, 200), url: item.link, source: feed.source, date: toISODate(item.pubDate) }),
-      }));
+      .slice(0, 8);
+
+    console.log(`[RSS] ${feed.source} — ${filtered.length} AI stories from ${data.items.length} total`);
+
+    return filtered.map((item, i) => ({
+      id:       `rss-${feed.source.replace(/\s/g, '-').toLowerCase()}-${Date.now()}-${i}`,
+      title:    (item.title || '').replace(/\s+/g, ' ').trim(),
+      subtitle: truncate(item.description, 130),
+      color:    feed.color,
+      date:     toISODate(item.pubDate),
+      url:      item.link || '',
+      score:    0,
+      source:   feed.source,
+      content:  buildNewsContent({ title: item.title, subtitle: truncate(item.description, 200), url: item.link, source: feed.source, date: toISODate(item.pubDate) }),
+    }));
+
   } catch (err) {
-    console.warn(`RSS fetch failed (${feed.source}):`, err.message);
+    // Network error, CORS, or JSON parse failure
+    console.warn(`[RSS] ${feed.source} — fetch threw: ${err.message} (url: ${feed.url})`);
     return [];
   }
 }

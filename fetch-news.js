@@ -13,8 +13,9 @@ const NEWS_JSON_PATH = path.resolve('data/news.json');
 const MAX_NEWS_POSTS = 20;
 
 const RSS_FEEDS = [
-  { url: 'https://feeds.feedburner.com/TechCrunch',        source: 'TechCrunch',      color: 'yellow' },
-  { url: 'https://www.technologyreview.com/feed/',          source: 'MIT Tech Review', color: 'blue'   },
+  { url: 'https://techcrunch.com/category/artificial-intelligence/feed/', source: 'TechCrunch', color: 'yellow' },
+  { url: 'https://venturebeat.com/feed/',                                 source: 'VentureBeat', color: 'blue'   },
+  { url: 'https://www.wired.com/feed/category/artificial-intelligence/latest/rss', source: 'Wired', color: 'purple' },
 ];
 
 const AI_KEYWORDS = [
