@@ -62,16 +62,13 @@
         <span class="section-num" id="section-num"></span>
         <h1 class="section-title" id="section-title"></h1>
       </div>
-      <button class="add-post-btn" id="add-post-btn">+ New Post</button>
     </div>
 
-    <div class="posts-grid" id="posts-grid">
-      <!-- Posts injected here -->
-    </div>
+    <div class="posts-grid" id="posts-grid"></div>
 
     <div class="empty-state" id="empty-state" style="display:none">
       <div class="empty-icon">◌</div>
-      <p>No posts yet. Add the first one.</p>
+      <p>No posts yet.</p>
     </div>
   </div>
 
@@ -81,44 +78,20 @@
       <button class="back-btn" id="post-back-btn">← Back</button>
       <span class="post-category-tag" id="post-cat-tag"></span>
     </div>
-    <article class="post-article" id="post-article">
-      <!-- Post content injected here -->
-    </article>
+    <article class="post-article" id="post-article"></article>
   </div>
 
-  <!-- ADD POST MODAL -->
-  <div id="modal-overlay" class="modal-overlay">
-    <div class="modal">
-      <div class="modal-header">
-        <h2>New Post</h2>
-        <button class="modal-close" id="modal-close">✕</button>
-      </div>
-      <div class="modal-body">
-        <label>Title
-          <input type="text" id="new-post-title" placeholder="Post title..." />
-        </label>
-        <label>Subtitle / Description
-          <input type="text" id="new-post-subtitle" placeholder="Short description..." />
-        </label>
-        <label>Content <span class="hint">(Markdown-style: use # for headings, * for bullets, **bold**)</span>
-          <textarea id="new-post-content" placeholder="Write your content here...&#10;&#10;# Section Heading&#10;* bullet point&#10;**bold text**"></textarea>
-        </label>
-        <label>Tag / Category Color
-          <div class="color-picker" id="color-picker">
-            <div class="color-dot selected" data-color="green" style="background:#4ade80" title="Green"></div>
-            <div class="color-dot" data-color="blue" style="background:#60a5fa" title="Blue"></div>
-            <div class="color-dot" data-color="yellow" style="background:#fbbf24" title="Yellow"></div>
-            <div class="color-dot" data-color="red" style="background:#f87171" title="Red"></div>
-            <div class="color-dot" data-color="purple" style="background:#c084fc" title="Purple"></div>
-            <div class="color-dot" data-color="orange" style="background:#fb923c" title="Orange"></div>
-          </div>
-        </label>
-      </div>
-      <div class="modal-footer">
-        <button class="btn-cancel" id="modal-cancel">Cancel</button>
-        <button class="btn-submit" id="modal-submit">Publish Post</button>
-      </div>
+  <!-- LEADERBOARD TICKER -->
+  <div class="ticker-bar">
+    <div class="ticker-label">
+      <span class="ticker-icon">⚡</span>
+      <span class="ticker-title">AI RANKING</span>
+      <span class="ticker-divider"></span>
     </div>
+    <div class="ticker-track-wrap">
+      <div class="ticker-track" id="ticker-track"></div>
+    </div>
+    <a class="ticker-source" href="https://artificialanalysis.ai/leaderboards/models" target="_blank" rel="noopener">↗</a>
   </div>
 
   <script src="app.js"></script>

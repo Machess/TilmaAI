@@ -1,17 +1,41 @@
 // ===== TILMA AI — APP.JS =====
+// Posts are managed here in code. To add a post:
+//   1. Add an object to the relevant array below (prompt / coding / news)
+//   2. Commit and push — that's it.
 
-// ─── DATA STORE ───────────────────────────────────────────────────────────────
-const SECTIONS = {
-  prompt: { label: 'Prompt Engineering', num: '01', accent: 'prompt' },
-  coding: { label: 'AI Coding',          num: '02', accent: 'coding' },
-  news:   { label: 'AI News',            num: '03', accent: 'news'   },
+// ─── LEADERBOARD (update from artificialanalysis.ai/leaderboards/models) ─────
+const LEADERBOARD = {
+  updatedAt: 'May 2026',
+  models: [
+    { rank: 1, model: 'GPT-5.5',         creator: 'OpenAI',    score: 60 },
+    { rank: 2, model: 'GPT-5.5 (high)',  creator: 'OpenAI',    score: 59 },
+    { rank: 3, model: 'Claude Opus 4.7', creator: 'Anthropic', score: 57 },
+    { rank: 4, model: 'Gemini 3.1 Pro',  creator: 'Google',    score: 57 },
+    { rank: 5, model: 'GPT-5.4',         creator: 'OpenAI',    score: 57 },
+  ],
 };
 
-// Initial posts data — add new posts here or via the UI
-const INITIAL_POSTS = {
-  prompt: [],
-  news: [],
+// ─── POSTS ────────────────────────────────────────────────────────────────────
+// Add new posts by prepending objects to the relevant array.
+//
+// Post shape:
+// {
+//   id:       'unique-string',           // required, must be unique across all sections
+//   title:    'Post Title',              // required
+//   subtitle: 'Short description',       // optional
+//   color:    'green',                   // green | blue | yellow | red | purple | orange
+//   date:     'YYYY-MM-DD',              // required
+//   content:  `markdown string`,         // required — see README for supported syntax
+// }
+
+const POSTS = {
+
+  prompt: [
+    // ↓ Add new Prompt Engineering posts here
+  ],
+
   coding: [
+    // ↓ Add new AI Coding posts here
     {
       id: 'coding-001',
       title: 'Clean Timeline — 32 Tips Grouped for Clarity',
@@ -133,29 +157,24 @@ const INITIAL_POSTS = {
 * Combine Claude with other tools
 * Use containers for risky tasks
 * Build reusable "skills"`,
-    }
+    },
   ],
+
+  news: [
+    // ↓ Add new AI News posts here
+  ],
+
 };
 
-// Load from localStorage or use initial data
-function loadData() {
-  try {
-    const saved = localStorage.getItem('tilma-posts');
-    return saved ? JSON.parse(saved) : INITIAL_POSTS;
-  } catch {
-    return INITIAL_POSTS;
-  }
-}
+// ─── SECTION META ─────────────────────────────────────────────────────────────
+const SECTIONS = {
+  prompt: { label: 'Prompt Engineering', num: '01', accent: 'prompt' },
+  coding: { label: 'AI Coding',          num: '02', accent: 'coding' },
+  news:   { label: 'AI News',            num: '03', accent: 'news'   },
+};
 
-function saveData(data) {
-  try {
-    localStorage.setItem('tilma-posts', JSON.stringify(data));
-  } catch {}
-}
-
-let DB = loadData();
+// ─── STATE ────────────────────────────────────────────────────────────────────
 let currentSection = null;
-let selectedColor = 'green';
 
 // ─── DOM REFS ─────────────────────────────────────────────────────────────────
 const splashEl       = document.getElementById('splash');
@@ -165,21 +184,17 @@ const postsGridEl    = document.getElementById('posts-grid');
 const emptyStateEl   = document.getElementById('empty-state');
 const sectionNumEl   = document.getElementById('section-num');
 const sectionTitleEl = document.getElementById('section-title');
-const modalOverlay   = document.getElementById('modal-overlay');
 const postArticleEl  = document.getElementById('post-article');
 const postCatTagEl   = document.getElementById('post-cat-tag');
 
-// ─── NAVIGATION ──────────────────────────────────────────────────────────────
+// ─── NAVIGATION ───────────────────────────────────────────────────────────────
 function showPage(pageEl) {
   [splashEl, sectionPageEl, postPageEl].forEach(p => p.classList.remove('active'));
   pageEl.classList.add('active');
 }
 
 document.querySelectorAll('.paint-panel').forEach(panel => {
-  panel.addEventListener('click', () => {
-    const section = panel.dataset.section;
-    openSection(section);
-  });
+  panel.addEventListener('click', () => openSection(panel.dataset.section));
 });
 
 document.getElementById('back-btn').addEventListener('click', () => {
@@ -203,7 +218,7 @@ function openSection(section) {
 
 // ─── RENDER POSTS ─────────────────────────────────────────────────────────────
 function renderPosts(section) {
-  const posts = DB[section] || [];
+  const posts = POSTS[section] || [];
   postsGridEl.innerHTML = '';
 
   if (posts.length === 0) {
@@ -235,50 +250,33 @@ function renderPosts(section) {
 
 // ─── OPEN POST ────────────────────────────────────────────────────────────────
 function openPost(section, idx) {
-  const post = DB[section][idx];
+  const post = POSTS[section][idx];
   const meta = SECTIONS[section];
   postCatTagEl.textContent = meta.label;
-
   postArticleEl.innerHTML = `
     <h1 class="article-title">${escHtml(post.title)}</h1>
     <div class="article-subtitle">${escHtml(post.subtitle || '')} — ${formatDate(post.date)}</div>
     <div class="article-body">${markdownToHtml(post.content || '')}</div>
   `;
-
   showPage(postPageEl);
 }
 
-// ─── MARKDOWN RENDERER ───────────────────────────────────────────────────────
+// ─── MARKDOWN RENDERER ────────────────────────────────────────────────────────
 function markdownToHtml(md) {
   let html = md
-    // Escape HTML first
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-
-    // Horizontal rule
     .replace(/^---$/gm, '<hr style="border:none;border-top:1px solid var(--border);margin:2rem 0">')
-
-    // Headings
     .replace(/^### (.+)$/gm, '<h3>$1</h3>')
     .replace(/^## (.+)$/gm, '<h2>$1</h2>')
     .replace(/^# (.+)$/gm, '<h1>$1</h1>')
-
-    // Blockquotes (our "callout" style)
     .replace(/^&gt; \*\*(.+?)\*\*(.*)$/gm, '<div class="callout"><strong>$1</strong>$2</div>')
     .replace(/^&gt; (.+)$/gm, '<div class="callout">$1</div>')
-
-    // Inline code
     .replace(/`([^`]+)`/g, '<code>$1</code>')
-
-    // Bold
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-
-    // Bullet list items — collect them
     .replace(/^\* (.+)$/gm, '<li>$1</li>');
 
-  // Wrap consecutive <li> in <ul>
   html = html.replace(/(<li>.*<\/li>\n?)+/gs, match => `<ul>${match}</ul>`);
 
-  // Paragraphs: lines that are not block elements
   const lines = html.split('\n');
   const result = [];
   for (const line of lines) {
@@ -287,86 +285,38 @@ function markdownToHtml(md) {
     const isBlock = /^<(h[1-6]|ul|li|div|hr|blockquote)/.test(trimmed);
     result.push(isBlock ? trimmed : `<p>${trimmed}</p>`);
   }
-
   return result.join('\n');
 }
 
-// ─── ADD POST MODAL ───────────────────────────────────────────────────────────
-document.getElementById('add-post-btn').addEventListener('click', openModal);
-document.getElementById('modal-close').addEventListener('click', closeModal);
-document.getElementById('modal-cancel').addEventListener('click', closeModal);
-modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) closeModal(); });
-
-document.querySelectorAll('.color-dot').forEach(dot => {
-  dot.addEventListener('click', () => {
-    document.querySelectorAll('.color-dot').forEach(d => d.classList.remove('selected'));
-    dot.classList.add('selected');
-    selectedColor = dot.dataset.color;
-  });
-});
-
-function openModal() {
-  document.getElementById('new-post-title').value = '';
-  document.getElementById('new-post-subtitle').value = '';
-  document.getElementById('new-post-content').value = '';
-  selectedColor = 'green';
-  document.querySelectorAll('.color-dot').forEach(d => d.classList.remove('selected'));
-  document.querySelector('.color-dot[data-color="green"]').classList.add('selected');
-  modalOverlay.classList.add('open');
-  setTimeout(() => document.getElementById('new-post-title').focus(), 100);
+// ─── TICKER ───────────────────────────────────────────────────────────────────
+function renderTicker() {
+  const track = document.getElementById('ticker-track');
+  if (!track) return;
+  const chipsHtml = LEADERBOARD.models.map(m => `
+    <div class="ticker-chip">
+      <span class="ticker-rank">${String(m.rank).padStart(2, '0')}</span>
+      <span class="ticker-model">${m.model}</span>
+      <span class="ticker-creator" data-creator="${m.creator}">${m.creator}</span>
+      <span class="ticker-score">◆ ${m.score}</span>
+    </div>
+  `).join('');
+  track.innerHTML = chipsHtml + chipsHtml;
 }
-
-function closeModal() {
-  modalOverlay.classList.remove('open');
-}
-
-document.getElementById('modal-submit').addEventListener('click', () => {
-  const title   = document.getElementById('new-post-title').value.trim();
-  const subtitle = document.getElementById('new-post-subtitle').value.trim();
-  const content = document.getElementById('new-post-content').value.trim();
-
-  if (!title) {
-    document.getElementById('new-post-title').focus();
-    document.getElementById('new-post-title').style.borderColor = 'var(--red)';
-    setTimeout(() => document.getElementById('new-post-title').style.borderColor = '', 1500);
-    return;
-  }
-
-  const post = {
-    id: `${currentSection}-${Date.now()}`,
-    title,
-    subtitle,
-    content,
-    color: selectedColor,
-    date: new Date().toISOString().split('T')[0],
-  };
-
-  if (!DB[currentSection]) DB[currentSection] = [];
-  DB[currentSection].unshift(post);
-  saveData(DB);
-  renderPosts(currentSection);
-  closeModal();
-});
-
-// ─── KEYBOARD ─────────────────────────────────────────────────────────────────
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeModal();
-});
 
 // ─── HELPERS ──────────────────────────────────────────────────────────────────
 function escHtml(str) {
   return String(str)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
 function formatDate(dateStr) {
   try {
-    const d = new Date(dateStr + 'T00:00:00');
-    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-  } catch {
-    return dateStr || '';
-  }
+    return new Date(dateStr + 'T00:00:00').toLocaleDateString('en-US', {
+      month: 'short', day: 'numeric', year: 'numeric'
+    });
+  } catch { return dateStr || ''; }
 }
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+renderTicker();
