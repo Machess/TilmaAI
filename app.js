@@ -161,7 +161,84 @@ const POSTS = {
   ],
 
   news: [
-    // ↓ Add new AI News posts here
+    // ↓ New posts are prepended here automatically each day by GitHub Actions
+    // ↓ You can also add manual posts below this line
+    {
+      id: 'news-003',
+      title: "Stanford AI Index 2026: AI Is Sprinting, We're Still Finding Our Shoes",
+      subtitle: 'The annual report card shows adoption outpacing every previous technology wave — while benchmarks, policy, and jobs struggle to keep up.',
+      color: 'blue',
+      date: '2026-04-13',
+      content: `# What the 2026 Stanford AI Index Found
+
+The Stanford Institute for Human-Centered AI dropped its annual index and the headline is blunt: top models keep getting better despite predictions of a slowdown.
+
+# Adoption Is Unprecedented
+
+* People are adopting AI faster than the personal computer or the internet
+* AI companies are generating revenue faster than any previous tech boom
+* Spending is record-breaking — hundreds of billions on data centres and chips
+
+# The Competitive Landscape Has Shifted
+
+* By March 2026, Anthropic leads — trailed by xAI, Google, and OpenAI
+* Chinese models like DeepSeek and Alibaba lag only modestly
+* Top models now compete on **cost, reliability, and real-world usefulness** rather than raw capability
+
+# US vs China
+
+* US advantages: more powerful models, more capital, 5,427+ data centres
+* China advantages: more AI research publications, patents, and robotics output
+
+> **Source:** MIT Technology Review, April 2026`,
+    },
+    {
+      id: 'news-002',
+      title: '2026: The Year AI Gets Practical',
+      subtitle: 'Agentic workflows are finally moving from demos to day-to-day use — and MCP is the reason why.',
+      color: 'yellow',
+      date: '2026-01-02',
+      content: `# From Hype to Pragmatism
+
+If 2025 was the year AI got a vibe check, 2026 is the year the tech gets practical.
+
+# Agentic Workflows Are Arriving
+
+* **MCP (Model Context Protocol)** is reducing friction for connecting agents to real systems
+* Google has stood up managed MCP servers connecting AI agents to its own products
+* Agents are moving from demo mode into system-of-record roles across industries
+
+# Smaller Models, Physical AI
+
+* The focus is shifting to **smaller, targeted models** that fit specific use cases
+* Physical AI is entering wearables: smart glasses, health rings, always-on inference
+
+> **Source:** TechCrunch, January 2026`,
+    },
+    {
+      id: 'news-001',
+      title: 'AI Hallucinations Cost Nebraska Lawyer His Licence',
+      subtitle: 'A wave of AI citation errors is hitting US courts — $145,000 in sanctions in Q1 2026 alone.',
+      color: 'red',
+      date: '2026-04-01',
+      content: `# What Happened
+
+The Nebraska Supreme Court suspended attorney Greg Lake after his appellate brief contained **57 defective citations out of 63** — including 20 AI hallucinations: fictitious cases, fabricated quotations, and nonexistent statutes.
+
+# Why It Keeps Happening
+
+* LLMs generate plausible-sounding citations with high confidence
+* Professionals under time pressure skip verification
+* The output looks correct — formatting, style, and case name structure all seem right
+
+# What This Means for AI-Assisted Work
+
+* **Never ship AI output without verification**
+* Treat AI as a **first draft tool**, not a source of truth
+* The higher the stakes, the more rigorous the review needs to be
+
+> **Source:** Crescendo AI News, 2026`,
+    },
   ],
 
 };
