@@ -14,10 +14,16 @@ A clean, dark editorial-style web app for storing and browsing tips, tricks, and
 
 ```
 tilma-ai/
-├── index.html   — Single-page app shell, all HTML structure
-├── style.css    — All styles (CSS variables, layout, components)
-├── app.js       — Data, routing, rendering, post management
-└── README.md    — This file
+├── index.html                     — Single-page app shell, all HTML structure
+├── style.css                      — All styles (CSS variables, layout, components)
+├── app.js                         — Routing, rendering, live news fetch, markdown renderer
+├── fetch-news.js                  — CI script: fetches HN + RSS, writes data/news.json
+├── package.json                   — Dependencies for fetch-news.js
+├── .github/workflows/fetch-news.yml — Daily cron that runs fetch-news.js and commits the result
+├── data/prompt.json                — Posts for section 01, Prompt Engineering
+├── data/coding.json                — Posts for section 02, AI Coding
+├── data/news.json                  — Posts for section 03, AI News (fallback if live fetch fails)
+└── README.md                       — This file
 ```
 
 ---
@@ -34,41 +40,22 @@ npx serve .
 
 ---
 
-## Adding Posts via the UI
+## Adding Posts
 
-1. Click any of the 3 panels on the home screen to enter a section.
-2. Click **+ New Post** in the top-right corner.
-3. Fill in title, description, and content.
-4. Pick a color tag, click **Publish Post**.
+`prompt.json` and `coding.json` are static and edited directly — add an entry to the array in `data/prompt.json` or `data/coding.json` and push. Each post follows this shape:
 
-Posts are saved to `localStorage` and persist across sessions.
-
----
-
-## Adding Posts in Code
-
-Open `app.js` and find the `INITIAL_POSTS` object near the top:
-
-```js
-const INITIAL_POSTS = {
-  prompt: [ /* add posts here */ ],
-  coding: [ /* add posts here */ ],
-  news:   [ /* add posts here */ ],
-};
-```
-
-Each post follows this shape:
-
-```js
+```json
 {
-  id: 'unique-id',           // string, must be unique
-  title: 'Post Title',       // required
-  subtitle: 'Short blurb',   // optional
-  content: `# Heading\n* bullet`, // Markdown-style content
-  color: 'green',            // green | blue | yellow | red | purple | orange
-  date: '2025-05-01',        // YYYY-MM-DD
+  "id": "unique-id",
+  "title": "Post Title",
+  "subtitle": "Short blurb",
+  "content": "# Heading\n* bullet",
+  "color": "green",
+  "date": "2025-05-01"
 }
 ```
+
+`color` is one of `green | blue | yellow | red | purple | orange`.
 
 **Markdown supported in `content`:**
 - `# Heading`, `## Heading`, `### Heading`
@@ -77,8 +64,22 @@ Each post follows this shape:
 - `` `inline code` ``
 - `> blockquote / callout`
 - `---` horizontal rule
+- `[link text](url)`
 
-> **Note:** If you've used the app before, data in `localStorage` takes priority over `INITIAL_POSTS`. Clear `localStorage` (`localStorage.removeItem('tilma-posts')` in the browser console) to reset to the defaults in code.
+`data/news.json` is written automatically — see below.
+
+---
+
+## AI News
+
+The "AI News" section fetches Hacker News + RSS (TechCrunch, VentureBeat, Wired) live in the browser every time the section is opened, filtered to AI-related stories. `data/news.json` is only used as a fallback if that live fetch fails.
+
+`data/news.json` itself is kept fresh by [fetch-news.js](fetch-news.js), run daily by [.github/workflows/fetch-news.yml](.github/workflows/fetch-news.yml). To run it locally:
+
+```bash
+npm install
+npm run fetch-news
+```
 
 ---
 
@@ -95,6 +96,5 @@ Each post follows this shape:
 
 ## Tech
 
-Pure HTML, CSS, and vanilla JS. No frameworks, no dependencies, no build tools.
-Data persists via `localStorage`.
-# TilmaAI
+Pure HTML, CSS, and vanilla JS on the client. No frameworks, no build tools.
+A small Node script + GitHub Actions workflow keep `data/news.json` fresh server-side.

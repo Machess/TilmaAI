@@ -216,6 +216,15 @@ async function fetchRSSFeed(feed) {
   }
 }
 
+function safeStoryUrl(url) {
+  if (!url) return '';
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return '';
+    return parsed.href.replace(/[()"]/g, encodeURIComponent);
+  } catch { return ''; }
+}
+
 function buildNewsContent({ title, subtitle, url, source, score, date }) {
   const lines = [];
   if (subtitle && source !== 'Hacker News') lines.push(`# Summary\n\n${subtitle}\n`);
@@ -224,7 +233,8 @@ function buildNewsContent({ title, subtitle, url, source, score, date }) {
   lines.push(`* **Published:** ${date}`);
   if (score) lines.push(`* **HN Score:** ${score} points`);
   lines.push('');
-  if (url) lines.push(`**[Read the full story →](${url})**`);
+  const safeUrl = safeStoryUrl(url);
+  if (safeUrl) lines.push(`**[Read the full story →](${safeUrl})**`);
   return lines.join('\n');
 }
 

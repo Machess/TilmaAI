@@ -4,7 +4,7 @@
   "type": "module",
   "description": "Tilma AI — field guide to AI-assisted coding",
   "scripts": {
-    "fetch-news": "node scripts/fetch-news.js"
+    "fetch-news": "node fetch-news.js"
   },
   "dependencies": {
     "node-fetch": "^3.0.0",

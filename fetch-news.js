@@ -48,6 +48,15 @@ function truncate(str, n) {
   return clean.length > n ? clean.slice(0, n).replace(/\s\S*$/, '') + '…' : clean;
 }
 
+function safeStoryUrl(url) {
+  if (!url) return '';
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return '';
+    return parsed.href.replace(/[()"]/g, encodeURIComponent);
+  } catch { return ''; }
+}
+
 // ─── FETCH HACKER NEWS ────────────────────────────────────────────────────────
 
 async function fetchHackerNews() {
@@ -129,7 +138,8 @@ function buildPostContent(story) {
   lines.push(`* **Published:** ${story.date}`);
   if (story.score) lines.push(`* **HN Score:** ${story.score} points`);
   lines.push('');
-  lines.push(`**[Read the full story →](${story.url})**`);
+  const safeUrl = safeStoryUrl(story.url);
+  if (safeUrl) lines.push(`**[Read the full story →](${safeUrl})**`);
   return lines.join('\n');
 }
 

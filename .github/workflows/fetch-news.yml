@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write   # needed to commit updated app.js back to the repo
+      contents: write   # needed to commit updated data/news.json back to the repo
 
     steps:
       - name: Checkout repo
@@ -27,13 +27,13 @@ jobs:
         run: npm install
 
       - name: Fetch and inject news
-        run: node scripts/fetch-news.js
+        run: node fetch-news.js
 
-      - name: Commit updated app.js
+      - name: Commit updated news.json
         run: |
           git config user.name  "tilma-bot"
           git config user.email "bot@tilma-ai"
-          git add app.js
-          # Only commit if app.js actually changed — skips on dry runs with no new stories
+          git add data/news.json
+          # Only commit if news.json actually changed — skips on dry runs with no new stories
           git diff --staged --quiet || git commit -m "🤖 Daily news refresh — $(date +'%B %-d, %Y')"
           git push

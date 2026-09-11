@@ -67,8 +67,36 @@ body {
   letter-spacing: 0.05em;
   color: var(--text);
   line-height: 1;
+  display: inline-flex;
+  align-items: center;
 }
-.logo span { color: var(--accent-coding); }
+
+/* AI span — teal at reduced opacity, feels like a reflection */
+.logo span {
+  color: var(--accent-coding);
+  opacity: 0.65;
+  letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Gradient mirror line — sits before AI, between TILMA and AI */
+.logo span::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 2.4rem;
+  margin: 0 0.42em;
+  flex-shrink: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(122, 232, 192, 0.12) 15%,
+    rgba(122, 232, 192, 0.6)  50%,
+    rgba(122, 232, 192, 0.12) 85%,
+    transparent 100%
+  );
+}
 
 .tagline {
   font-family: var(--font-mono);
