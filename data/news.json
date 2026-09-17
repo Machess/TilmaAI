@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-iceland-based-treble-raises-18-million-f-1789641898358-0",
+    "title": "Iceland-based Treble raises $18 million for its voice simulation platform",
+    "subtitle": "Treble's voice simulation platform is used by voice AI model developers, AI wearable, and robotics companies",
+    "color": "yellow",
+    "date": "2026-09-17",
+    "content": "# Summary\n\nTreble's voice simulation platform is used by voice AI model developers, AI wearable, and robotics companies\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-17\n\n**[Read the full story →](https://techcrunch.com/2026/09/16/iceland-based-treble-raises-18-million-for-its-voice-simulation-platform/)**"
+  },
+  {
+    "id": "rss-your-startup-s-next-teammate-might-be-an-1789641898358-1",
+    "title": "Your startup’s next teammate might be an AI agent: Gusto, Insight Partners, and Leland explain what that changes at TechCrunch Disrupt 2026",
+    "subtitle": "This session will explore how early-stage companies are building teams where humans and AI agents work alongside each…",
+    "color": "yellow",
+    "date": "2026-09-17",
+    "content": "# Summary\n\nThis session will explore how early-stage companies are building teams where humans and AI agents work alongside each…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-17\n\n**[Read the full story →](https://techcrunch.com/2026/09/16/your-startups-next-teammate-might-be-an-ai-agent-gusto-insight-partners-and-leland-explain-what-that-changes-at-techcrunch-disrupt-2026/)**"
+  },
+  {
+    "id": "rss-snap-tries-to-make-the-case-again-for-it-1789641898358-2",
+    "title": "Snap tries to make the case again for its $2,200 smart glasses",
+    "subtitle": "Since Specs' debut earlier this year, Snap has clearly been looking for an opportunity to explain why the smart glasses…",
+    "color": "yellow",
+    "date": "2026-09-17",
+    "content": "# Summary\n\nSince Specs' debut earlier this year, Snap has clearly been looking for an opportunity to explain why the smart glasses…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-17\n\n**[Read the full story →](https://techcrunch.com/2026/09/16/snap-tries-to-make-the-case-again-for-its-2200-smart-glasses/)**"
+  },
+  {
     "id": "rss-amazon-launches-alexa-in-india-with-hind-1789554922363-0",
     "title": "Amazon launches Alexa+ in India with Hindi support",
     "subtitle": "Amazon today announced that its Alexa+ conversational assistant is available in India with Hindi support. The new…",
@@ -134,13 +158,5 @@
     "color": "yellow",
     "date": "2026-01-02",
     "content": "# From Hype to Pragmatism\n\nIf 2025 was the year AI got a vibe check, 2026 is the year the tech gets practical.\n\n# Agentic Workflows Are Arriving\n\n* **MCP (Model Context Protocol)** is reducing friction for connecting agents to real systems\n* Google has stood up managed MCP servers connecting AI agents to its own products\n* Agents are moving from demo mode into system-of-record roles across industries\n\n# Smaller Models, Physical AI\n\n* The focus is shifting to **smaller, targeted models** that fit specific use cases\n* Physical AI is entering wearables: smart glasses, health rings, always-on inference\n\n> **Source:** TechCrunch, January 2026"
-  },
-  {
-    "id": "news-001",
-    "title": "AI Hallucinations Cost Nebraska Lawyer His Licence",
-    "subtitle": "A wave of AI citation errors is hitting US courts — $145,000 in sanctions in Q1 2026 alone.",
-    "color": "red",
-    "date": "2026-04-01",
-    "content": "# What Happened\n\nThe Nebraska Supreme Court suspended attorney Greg Lake after his appellate brief contained **57 defective citations out of 63** — including 20 AI hallucinations: fictitious cases, fabricated quotations, and nonexistent statutes.\n\n# Why It Keeps Happening\n\n* LLMs generate plausible-sounding citations with high confidence\n* Professionals under time pressure skip verification\n* The output looks correct — formatting, style, and case name structure all seem right\n\n# What This Means for AI-Assisted Work\n\n* **Never ship AI output without verification**\n* Treat AI as a **first draft tool**, not a source of truth\n* The higher the stakes, the more rigorous the review needs to be\n\n> **Source:** Crescendo AI News, 2026"
   }
 ]
