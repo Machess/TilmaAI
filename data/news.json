@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-crusoe-raises-3-9b-to-build-massive-data-1789726815036-0",
+    "title": "Crusoe raises $3.9B to build massive data centers and small modular ‘AI factories’",
+    "subtitle": "The round values the data center giant at $30.9 billion.",
+    "color": "yellow",
+    "date": "2026-09-17",
+    "content": "# Summary\n\nThe round values the data center giant at $30.9 billion.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-17\n\n**[Read the full story →](https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/)**"
+  },
+  {
+    "id": "rss-google-deepmind-launches-institute-to-wi-1789726815036-1",
+    "title": "Google DeepMind launches institute to widen the AGI debate",
+    "subtitle": "The new institute aims to surface differing views between Google, Google DeepMind, and the broader global research…",
+    "color": "yellow",
+    "date": "2026-09-17",
+    "content": "# Summary\n\nThe new institute aims to surface differing views between Google, Google DeepMind, and the broader global research…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-17\n\n**[Read the full story →](https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/)**"
+  },
+  {
+    "id": "rss-prismml-hopes-its-tiny-llm-will-change-h-1789726815036-2",
+    "title": "PrismML hopes its tiny LLM will change how we all use AI",
+    "subtitle": "If AI lab PrismML isn't on your radar yet, it should be.",
+    "color": "yellow",
+    "date": "2026-09-17",
+    "content": "# Summary\n\nIf AI lab PrismML isn't on your radar yet, it should be.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-17\n\n**[Read the full story →](https://techcrunch.com/2026/09/17/prismml-hopes-its-tiny-llm-could-change-how-we-all-use-ai/)**"
+  },
+  {
     "id": "rss-iceland-based-treble-raises-18-million-f-1789641898358-0",
     "title": "Iceland-based Treble raises $18 million for its voice simulation platform",
     "subtitle": "Treble's voice simulation platform is used by voice AI model developers, AI wearable, and robotics companies",
@@ -134,29 +158,5 @@
     "color": "yellow",
     "date": "2026-09-11",
     "content": "# Summary\n\nTan wants smaller, American open-weight AI labs to use the same kind of training techniques on American frontier AI…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-11\n\n**[Read the full story →](https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/)**"
-  },
-  {
-    "id": "rss-openai-s-feud-with-mathematicians-is-onl-1789206752311-2",
-    "title": "OpenAI’s feud with mathematicians is only escalating",
-    "subtitle": "Twenty-five leading mathematicians signed an open letter arguing that AI labs are threatening their intellectual work.",
-    "color": "yellow",
-    "date": "2026-09-11",
-    "content": "# Summary\n\nTwenty-five leading mathematicians signed an open letter arguing that AI labs are threatening their intellectual work.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-11\n\n**[Read the full story →](https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/)**"
-  },
-  {
-    "id": "news-003",
-    "title": "Stanford AI Index 2026: AI Is Sprinting, We're Still Finding Our Shoes",
-    "subtitle": "The annual report card shows adoption outpacing every previous technology wave — while benchmarks, policy, and jobs struggle to keep up.",
-    "color": "blue",
-    "date": "2026-04-13",
-    "content": "# What the 2026 Stanford AI Index Found\n\nThe Stanford Institute for Human-Centered AI dropped its annual index and the headline is blunt: top models keep getting better despite predictions of a slowdown.\n\n# Adoption Is Unprecedented\n\n* People are adopting AI faster than the personal computer or the internet\n* AI companies are generating revenue faster than any previous tech boom\n* Spending is record-breaking — hundreds of billions on data centres and chips\n\n# The Competitive Landscape Has Shifted\n\n* By March 2026, Anthropic leads — trailed by xAI, Google, and OpenAI\n* Chinese models like DeepSeek and Alibaba lag only modestly\n* Top models now compete on **cost, reliability, and real-world usefulness** rather than raw capability\n\n# US vs China\n\n* US advantages: more powerful models, more capital, 5,427+ data centres\n* China advantages: more AI research publications, patents, and robotics output\n\n> **Source:** MIT Technology Review, April 2026"
-  },
-  {
-    "id": "news-002",
-    "title": "2026: The Year AI Gets Practical",
-    "subtitle": "Agentic workflows are finally moving from demos to day-to-day use — and MCP is the reason why.",
-    "color": "yellow",
-    "date": "2026-01-02",
-    "content": "# From Hype to Pragmatism\n\nIf 2025 was the year AI got a vibe check, 2026 is the year the tech gets practical.\n\n# Agentic Workflows Are Arriving\n\n* **MCP (Model Context Protocol)** is reducing friction for connecting agents to real systems\n* Google has stood up managed MCP servers connecting AI agents to its own products\n* Agents are moving from demo mode into system-of-record roles across industries\n\n# Smaller Models, Physical AI\n\n* The focus is shifting to **smaller, targeted models** that fit specific use cases\n* Physical AI is entering wearables: smart glasses, health rings, always-on inference\n\n> **Source:** TechCrunch, January 2026"
   }
 ]
