@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-the-man-who-built-apple-s-stores-doesn-t-1790073735637-0",
+    "title": "The man who built Apple’s stores doesn’t buy Silicon Valley’s bet on AI shopping",
+    "subtitle": "Apple Store architect Ron Johnson says Apple's secret sauce has always been its people.",
+    "color": "yellow",
+    "date": "2026-09-21",
+    "content": "# Summary\n\nApple Store architect Ron Johnson says Apple's secret sauce has always been its people.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-21\n\n**[Read the full story →](https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/)**"
+  },
+  {
+    "id": "rss-openai-forms-math-advisory-group-as-its--1790073735637-1",
+    "title": "OpenAI forms math advisory group as its AI resolves more than 100 open problems",
+    "subtitle": "The group won't be given leeway to slow down or redirect OpenAI's ongoing mathematical research.",
+    "color": "yellow",
+    "date": "2026-09-21",
+    "content": "# Summary\n\nThe group won't be given leeway to slow down or redirect OpenAI's ongoing mathematical research.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-21\n\n**[Read the full story →](https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/)**"
+  },
+  {
+    "id": "rss-meta-s-muse-is-outpacing-chatgpt-s-early-1790073735637-2",
+    "title": "Meta’s Muse is outpacing ChatGPT’s early mobile launch",
+    "subtitle": "Meta’s new AI agent Muse has racked up more downloads and daily active users in the U.S. and Canada than ChatGPT did…",
+    "color": "yellow",
+    "date": "2026-09-21",
+    "content": "# Summary\n\nMeta’s new AI agent Muse has racked up more downloads and daily active users in the U.S. and Canada than ChatGPT did…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-21\n\n**[Read the full story →](https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/)**"
+  },
+  {
     "id": "rss-is-the-ai-industry-really-ready-to-slow--1789990633331-0",
     "title": "Is the AI industry really ready to slow down?",
     "subtitle": "On Equity, we debated whether Ai executives are serious about wanting to slow down.",
@@ -134,29 +158,5 @@
     "color": "yellow",
     "date": "2026-09-16",
     "content": "# Summary\n\nAI isn't some new form of \"alien mind,\" according to Jensen Huang. It's just hardware and software, so safety can be…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-16\n\n**[Read the full story →](https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/)**"
-  },
-  {
-    "id": "rss-the-ai-data-center-boom-is-colliding-wit-1789554922363-2",
-    "title": "The AI data center boom is colliding with cities scarred by big industry",
-    "subtitle": "National outcry against data center construction has spread to Philadelphia, where officials suggested possible…",
-    "color": "yellow",
-    "date": "2026-09-15",
-    "content": "# Summary\n\nNational outcry against data center construction has spread to Philadelphia, where officials suggested possible…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-15\n\n**[Read the full story →](https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/)**"
-  },
-  {
-    "id": "rss-nvidia-ceo-jensen-huang-tells-trump-we-r-1789469184450-0",
-    "title": "Nvidia CEO Jensen Huang tells Trump ‘we’re not going to let [an AI slowdown] happen’",
-    "subtitle": "Though Elon Musk and Sam Altman have supported Dario Amodei's calls to slow the pace of AI development, Jensen Huang…",
-    "color": "yellow",
-    "date": "2026-09-14",
-    "content": "# Summary\n\nThough Elon Musk and Sam Altman have supported Dario Amodei's calls to slow the pace of AI development, Jensen Huang…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-14\n\n**[Read the full story →](https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/)**"
-  },
-  {
-    "id": "rss-openai-buys-smartphone-camera-maker-glas-1789469184450-1",
-    "title": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
-    "subtitle": "Glass Imaging was founded by a pair of former Apple engineers who previously led the team that developed Apple's…",
-    "color": "yellow",
-    "date": "2026-09-14",
-    "content": "# Summary\n\nGlass Imaging was founded by a pair of former Apple engineers who previously led the team that developed Apple's…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-14\n\n**[Read the full story →](https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/)**"
   }
 ]
