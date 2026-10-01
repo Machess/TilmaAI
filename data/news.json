@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-google-releases-gemini-4-argon-called-it-1790856637438-0",
+    "title": "Google releases Gemini 4 Argon, called its most powerful model yet",
+    "subtitle": "Google has released its latest Gemini model, marketing it as a workhorse for coding and cybersecurity work.",
+    "color": "yellow",
+    "date": "2026-09-30",
+    "content": "# Summary\n\nGoogle has released its latest Gemini model, marketing it as a workhorse for coding and cybersecurity work.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-30\n\n**[Read the full story →](https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/)**"
+  },
+  {
+    "id": "rss-valor-atreides-and-sequoia-back-ai-start-1790856637438-1",
+    "title": "Valor, Atreides, and Sequoia back AI startup Flow Engineering at $750M valuation",
+    "subtitle": "Flow Engineering, which is bringing AI agents to hardware design, also landed Roelof Botha as an angel investor and…",
+    "color": "yellow",
+    "date": "2026-09-30",
+    "content": "# Summary\n\nFlow Engineering, which is bringing AI agents to hardware design, also landed Roelof Botha as an angel investor and…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-30\n\n**[Read the full story →](https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/)**"
+  },
+  {
+    "id": "rss-openai-s-jev-clone-could-help-the-fronti-1790856637438-2",
+    "title": "OpenAI’s Jev clone could help the frontier lab stop its swarming agents",
+    "subtitle": "OpenAI's \"Decisions API\" is a Jev clone that confirms the importance of fast, cheap intelligence.",
+    "color": "yellow",
+    "date": "2026-09-30",
+    "content": "# Summary\n\nOpenAI's \"Decisions API\" is a Jev clone that confirms the importance of fast, cheap intelligence.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-30\n\n**[Read the full story →](https://techcrunch.com/2026/09/30/openais-jev-clone-could-help-the-frontier-lab-stop-its-swarming-agents/)**"
+  },
+  {
     "id": "rss-the-internet-is-convinced-elon-musk-s-xa-1790768539389-0",
     "title": "The internet is convinced Elon Musk’s xAI trolled OpenAI’s ‘Dots’ launch",
     "subtitle": "Before OpenAI launched its new AI agent, Dots, on Tuesday, Elon Musk's xAI had already acquired the domain name…",
@@ -134,29 +158,5 @@
     "color": "yellow",
     "date": "2026-09-24",
     "content": "# Summary\n\nPrism's larger goal is open-weight AI that runs on devices and makes better use of the computing power they already…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-24\n\n**[Read the full story →](https://techcrunch.com/2026/09/24/prismml-brings-its-tiny-llms-to-qualcomm-powered-smart-glasses/)**"
-  },
-  {
-    "id": "rss-meta-s-muse-charm-looks-like-a-tamagotch-1790333702106-2",
-    "title": "Meta’s Muse Charm looks like a Tamagotchi, but it’s tapping into a much newer trend",
-    "subtitle": "Meta’s new AI gadget may look like a Tamagotchi, but its dangling form factor taps into a much broader Gen Z trend…",
-    "color": "yellow",
-    "date": "2026-09-24",
-    "content": "# Summary\n\nMeta’s new AI gadget may look like a Tamagotchi, but its dangling form factor taps into a much broader Gen Z trend…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-24\n\n**[Read the full story →](https://techcrunch.com/2026/09/24/metas-muse-charm-looks-like-a-tamagotchi-but-its-tapping-into-a-much-newer-trend/)**"
-  },
-  {
-    "id": "rss-everything-new-coming-to-meta-s-ai-agent-1790247122914-0",
-    "title": "Everything new coming to Meta’s AI agent Muse",
-    "subtitle": "CEO Mark Zuckerberg kicked off the company’s annual Connect event in Menlo Park on Wednesday with a keynote that made…",
-    "color": "yellow",
-    "date": "2026-09-24",
-    "content": "# Summary\n\nCEO Mark Zuckerberg kicked off the company’s annual Connect event in Menlo Park on Wednesday with a keynote that made…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-24\n\n**[Read the full story →](https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/)**"
-  },
-  {
-    "id": "rss-meta-made-a-tamagotchi-like-wearable-for-1790247122914-1",
-    "title": "Meta made a Tamagotchi-like wearable for its Muse AI agent",
-    "subtitle": "The tiny hardware device creates another mobile home for its AI agent Muse.",
-    "color": "yellow",
-    "date": "2026-09-24",
-    "content": "# Summary\n\nThe tiny hardware device creates another mobile home for its AI agent Muse.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-24\n\n**[Read the full story →](https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/)**"
   }
 ]
