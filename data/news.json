@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-can-safeworld-convince-people-that-genai-1791205964024-0",
+    "title": "Can Safeworld convince people that GenAI robots won’t hurt them?",
+    "subtitle": "Safeworld is building digital humans to make sure robots don't hurt the real ones.",
+    "color": "yellow",
+    "date": "2026-10-05",
+    "content": "# Summary\n\nSafeworld is building digital humans to make sure robots don't hurt the real ones.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-05\n\n**[Read the full story →](https://techcrunch.com/2026/10/05/can-safeworld-convince-people-that-gen-ai-robots-wont-hurt-them/)**"
+  },
+  {
+    "id": "rss-google-froze-its-open-source-bug-bounty--1791205964024-1",
+    "title": "Google froze its open source bug bounty program due to a ‘significant rise’ in AI submissions",
+    "subtitle": "AI slop seems to be overwhelming bug bounty programs.",
+    "color": "yellow",
+    "date": "2026-10-04",
+    "content": "# Summary\n\nAI slop seems to be overwhelming bug bounty programs.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-04\n\n**[Read the full story →](https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/)**"
+  },
+  {
+    "id": "rss-can-super-intelligence-and-a-non-binding-1791205964024-2",
+    "title": "Can ‘super intelligence’ and a non-binding safety pact solve AI’s image problem?",
+    "subtitle": "On Equity, we discussed the Trump administration's attempts to rebrand AI.",
+    "color": "yellow",
+    "date": "2026-10-04",
+    "content": "# Summary\n\nOn Equity, we discussed the Trump administration's attempts to rebrand AI.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-04\n\n**[Read the full story →](https://techcrunch.com/2026/10/04/can-super-intelligence-and-a-non-binding-safety-pact-solve-ais-image-problem/)**"
+  },
+  {
     "id": "rss-amazon-responds-to-data-center-backlash--1791113778237-0",
     "title": "Amazon responds to data center backlash, says it no longer uses NDAs",
     "subtitle": "The CEO of Amazon Web Services tried to push back against widespread suspicion of data centers.",
@@ -134,29 +158,5 @@
     "color": "yellow",
     "date": "2026-09-28",
     "content": "# Summary\n\nA top executive at the AI lab told the Wall Street Journal that the model in question had displayed a poor aptitude for…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-28\n\n**[Read the full story →](https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns/)**"
-  },
-  {
-    "id": "rss-source-inference-provider-modal-labs-clo-1790682853966-2",
-    "title": "Source: Inference provider Modal Labs closing in on $750M round at $15.75B valuation",
-    "subtitle": "The new financing is expected to more than triples the AI infrastructure startup's valuation from just four months ago.",
-    "color": "yellow",
-    "date": "2026-09-28",
-    "content": "# Summary\n\nThe new financing is expected to more than triples the AI infrastructure startup's valuation from just four months ago.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-28\n\n**[Read the full story →](https://techcrunch.com/2026/09/28/source-inference-provider-modal-labs-closing-in-on-750m-round-at-15-75b-valuation/)**"
-  },
-  {
-    "id": "rss-anthropic-s-ceo-is-about-to-have-dinner--1790598747623-0",
-    "title": "Anthropic’s CEO is about to have dinner with President Trump",
-    "subtitle": "This will be the first one-on-one meeting between Dario Amodei and Donald Trump",
-    "color": "yellow",
-    "date": "2026-09-27",
-    "content": "# Summary\n\nThis will be the first one-on-one meeting between Dario Amodei and Donald Trump\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-27\n\n**[Read the full story →](https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/)**"
-  },
-  {
-    "id": "rss-can-muse-overcome-meta-s-trust-issues-1790598747623-1",
-    "title": "Can Muse overcome Meta’s trust issues?",
-    "subtitle": "On Equity, we discussed how Meta's AI announcement managed to steal the spotlight from OpenAI and Anthropic.",
-    "color": "yellow",
-    "date": "2026-09-27",
-    "content": "# Summary\n\nOn Equity, we discussed how Meta's AI announcement managed to steal the spotlight from OpenAI and Anthropic.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-27\n\n**[Read the full story →](https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues/)**"
   }
 ]
