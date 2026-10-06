@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-openai-will-start-watermarking-chatgpt-s-1791289919250-0",
+    "title": "OpenAI will start watermarking ChatGPT’s text in the EU",
+    "subtitle": "OpenAI will watermark ChatGPT and Codex text in the EU to comply with the AI Act. Editing can make the invisible marks…",
+    "color": "yellow",
+    "date": "2026-10-05",
+    "content": "# Summary\n\nOpenAI will watermark ChatGPT and Codex text in the EU to comply with the AI Act. Editing can make the invisible marks…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-05\n\n**[Read the full story →](https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/)**"
+  },
+  {
+    "id": "rss-reflection-debuts-beam-an-open-weight-ai-1791289919250-1",
+    "title": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost",
+    "subtitle": "Reflection is aiming Beam and future models at enterprises and sovereign nations. The pitch is to build “AI factories,”…",
+    "color": "yellow",
+    "date": "2026-10-05",
+    "content": "# Summary\n\nReflection is aiming Beam and future models at enterprises and sovereign nations. The pitch is to build “AI factories,”…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-05\n\n**[Read the full story →](https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/)**"
+  },
+  {
+    "id": "rss-instinct-brings-its-ai-agent-to-group-ch-1791289919250-2",
+    "title": "Instinct brings its AI agent to group chats, even for friends without an account",
+    "subtitle": "Instinct is launching group chats that let friends use its AI agent together for tasks like planning trips, organizing…",
+    "color": "yellow",
+    "date": "2026-10-05",
+    "content": "# Summary\n\nInstinct is launching group chats that let friends use its AI agent together for tasks like planning trips, organizing…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-05\n\n**[Read the full story →](https://techcrunch.com/2026/10/05/instinct-brings-its-ai-agent-to-group-chats-even-for-friends-without-an-account/)**"
+  },
+  {
     "id": "rss-can-safeworld-convince-people-that-genai-1791205964024-0",
     "title": "Can Safeworld convince people that GenAI robots won’t hurt them?",
     "subtitle": "Safeworld is building digital humans to make sure robots don't hurt the real ones.",
@@ -134,29 +158,5 @@
     "color": "yellow",
     "date": "2026-09-29",
     "content": "# Summary\n\nOpenAI is building out the pieces of an alternative to the traditional app store model, turning ChatGPT into a place…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-29\n\n**[Read the full story →](https://techcrunch.com/2026/09/29/openais-latest-features-take-direct-aim-at-the-app-store-model/)**"
-  },
-  {
-    "id": "rss-openai-reportedly-in-talks-to-raise-30b--1790768539389-2",
-    "title": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
-    "subtitle": "The new round is anticipated to be the company's last before its delayed 2027 public debut.",
-    "color": "yellow",
-    "date": "2026-09-29",
-    "content": "# Summary\n\nThe new round is anticipated to be the company's last before its delayed 2027 public debut.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-29\n\n**[Read the full story →](https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/)**"
-  },
-  {
-    "id": "rss-anthropic-s-prospectus-details-losses-gr-1790682853966-0",
-    "title": "Anthropic’s prospectus details losses, growth, and, yes, a warning that its AI could end humanity",
-    "subtitle": "In its prospectus, Anthropic just told investors it's losing tens of billions of dollars a year, but also growing like…",
-    "color": "yellow",
-    "date": "2026-09-29",
-    "content": "# Summary\n\nIn its prospectus, Anthropic just told investors it's losing tens of billions of dollars a year, but also growing like…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-29\n\n**[Read the full story →](https://techcrunch.com/2026/09/28/anthropics-prospectus-details-losses-growth-and-yes-a-warning-that-its-ai-could-end-humanity/)**"
-  },
-  {
-    "id": "rss-openai-reportedly-ditches-model-over-saf-1790682853966-1",
-    "title": "OpenAI reportedly ditches model over safety concerns",
-    "subtitle": "A top executive at the AI lab told the Wall Street Journal that the model in question had displayed a poor aptitude for…",
-    "color": "yellow",
-    "date": "2026-09-28",
-    "content": "# Summary\n\nA top executive at the AI lab told the Wall Street Journal that the model in question had displayed a poor aptitude for…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-28\n\n**[Read the full story →](https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns/)**"
   }
 ]
