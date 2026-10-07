@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-ex-ramp-engineers-raise-20m-for-platform-1791375902579-0",
+    "title": "Ex-Ramp engineers raise $20M for platform Melius after scrapping their first product",
+    "subtitle": "Instead of helping marketers manage and optimize ad spend, the company is focusing on building the tools that generate…",
+    "color": "yellow",
+    "date": "2026-10-06",
+    "content": "# Summary\n\nInstead of helping marketers manage and optimize ad spend, the company is focusing on building the tools that generate…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-06\n\n**[Read the full story →](https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/)**"
+  },
+  {
+    "id": "rss-how-ai-decision-models-could-change-cont-1791375902579-1",
+    "title": "How AI decision models could change content moderation",
+    "subtitle": "On Tuesday, Musubi announced a lightweight decision model made for real-time moderation called PolicyLM-1.7B, released…",
+    "color": "yellow",
+    "date": "2026-10-06",
+    "content": "# Summary\n\nOn Tuesday, Musubi announced a lightweight decision model made for real-time moderation called PolicyLM-1.7B, released…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-06\n\n**[Read the full story →](https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/)**"
+  },
+  {
+    "id": "rss-ai-computing-startup-lambda-to-raise-4b--1791375902579-2",
+    "title": "AI computing startup Lambda to raise $4B ahead of planned IPO",
+    "subtitle": "Nvidia-backed Lambda is raising up to $4 billion at a $14.5 billion pre-money valuation ahead of a planned 2027 IPO,…",
+    "color": "yellow",
+    "date": "2026-10-06",
+    "content": "# Summary\n\nNvidia-backed Lambda is raising up to $4 billion at a $14.5 billion pre-money valuation ahead of a planned 2027 IPO,…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-06\n\n**[Read the full story →](https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/)**"
+  },
+  {
     "id": "rss-openai-will-start-watermarking-chatgpt-s-1791289919250-0",
     "title": "OpenAI will start watermarking ChatGPT’s text in the EU",
     "subtitle": "OpenAI will watermark ChatGPT and Codex text in the EU to comply with the AI Act. Editing can make the invisible marks…",
@@ -134,29 +158,5 @@
     "color": "yellow",
     "date": "2026-09-30",
     "content": "# Summary\n\nFlow Engineering, which is bringing AI agents to hardware design, also landed Roelof Botha as an angel investor and…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-30\n\n**[Read the full story →](https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/)**"
-  },
-  {
-    "id": "rss-openai-s-jev-clone-could-help-the-fronti-1790856637438-2",
-    "title": "OpenAI’s Jev clone could help the frontier lab stop its swarming agents",
-    "subtitle": "OpenAI's \"Decisions API\" is a Jev clone that confirms the importance of fast, cheap intelligence.",
-    "color": "yellow",
-    "date": "2026-09-30",
-    "content": "# Summary\n\nOpenAI's \"Decisions API\" is a Jev clone that confirms the importance of fast, cheap intelligence.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-30\n\n**[Read the full story →](https://techcrunch.com/2026/09/30/openais-jev-clone-could-help-the-frontier-lab-stop-its-swarming-agents/)**"
-  },
-  {
-    "id": "rss-the-internet-is-convinced-elon-musk-s-xa-1790768539389-0",
-    "title": "The internet is convinced Elon Musk’s xAI trolled OpenAI’s ‘Dots’ launch",
-    "subtitle": "Before OpenAI launched its new AI agent, Dots, on Tuesday, Elon Musk's xAI had already acquired the domain name…",
-    "color": "yellow",
-    "date": "2026-09-29",
-    "content": "# Summary\n\nBefore OpenAI launched its new AI agent, Dots, on Tuesday, Elon Musk's xAI had already acquired the domain name…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-29\n\n**[Read the full story →](https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/)**"
-  },
-  {
-    "id": "rss-openai-s-latest-features-take-direct-aim-1790768539389-1",
-    "title": "OpenAI’s latest features take direct aim at the app store model",
-    "subtitle": "OpenAI is building out the pieces of an alternative to the traditional app store model, turning ChatGPT into a place…",
-    "color": "yellow",
-    "date": "2026-09-29",
-    "content": "# Summary\n\nOpenAI is building out the pieces of an alternative to the traditional app store model, turning ChatGPT into a place…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-29\n\n**[Read the full story →](https://techcrunch.com/2026/09/29/openais-latest-features-take-direct-aim-at-the-app-store-model/)**"
   }
 ]
