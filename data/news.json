@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-nous-research-confirms-it-hit-1-5b-valua-1791462874321-0",
+    "title": "Nous Research confirms it hit $1.5B valuation, launches AI agents for business users",
+    "subtitle": "The developer of Hermes Agent raised a $90 million Series B.",
+    "color": "yellow",
+    "date": "2026-10-07",
+    "content": "# Summary\n\nThe developer of Hermes Agent raised a $90 million Series B.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-07\n\n**[Read the full story →](https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/)**"
+  },
+  {
+    "id": "rss-microsoft-releases-new-nvidia-chip-ai-pc-1791462874321-1",
+    "title": "Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11",
+    "subtitle": "Microsoft revealed the specs and price for its Surface Laptop Ultra, AI PCs that run on Nvidia chips that are designed…",
+    "color": "yellow",
+    "date": "2026-10-07",
+    "content": "# Summary\n\nMicrosoft revealed the specs and price for its Surface Laptop Ultra, AI PCs that run on Nvidia chips that are designed…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-07\n\n**[Read the full story →](https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/)**"
+  },
+  {
+    "id": "rss-meta-s-muse-launches-on-ipad-just-a-mont-1791462874321-2",
+    "title": "Meta’s Muse launches on iPad just a month after its mobile debut",
+    "subtitle": "Meta’s AI agent Muse is now available on iPad, just a month after its mobile debut, as the company rapidly expands the…",
+    "color": "yellow",
+    "date": "2026-10-07",
+    "content": "# Summary\n\nMeta’s AI agent Muse is now available on iPad, just a month after its mobile debut, as the company rapidly expands the…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-07\n\n**[Read the full story →](https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut/)**"
+  },
+  {
     "id": "rss-ex-ramp-engineers-raise-20m-for-platform-1791375902579-0",
     "title": "Ex-Ramp engineers raise $20M for platform Melius after scrapping their first product",
     "subtitle": "Instead of helping marketers manage and optimize ad spend, the company is focusing on building the tools that generate…",
@@ -134,29 +158,5 @@
     "color": "yellow",
     "date": "2026-10-01",
     "content": "# Summary\n\nOpenAI is rolling out new shopping features for ChatGPT that let users virtually try on clothing and accessories using…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-01\n\n**[Read the full story →](https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/)**"
-  },
-  {
-    "id": "rss-openai-cuts-ties-with-3-safety-researche-1790941227696-2",
-    "title": "OpenAI cuts ties with 3 safety researchers, WSJ reports",
-    "subtitle": "OpenAI has parted ways with three safety researchers after an internal investigation found they mishandled sensitive…",
-    "color": "yellow",
-    "date": "2026-10-01",
-    "content": "# Summary\n\nOpenAI has parted ways with three safety researchers after an internal investigation found they mishandled sensitive…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-01\n\n**[Read the full story →](https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/)**"
-  },
-  {
-    "id": "rss-google-releases-gemini-4-argon-called-it-1790856637438-0",
-    "title": "Google releases Gemini 4 Argon, called its most powerful model yet",
-    "subtitle": "Google has released its latest Gemini model, marketing it as a workhorse for coding and cybersecurity work.",
-    "color": "yellow",
-    "date": "2026-09-30",
-    "content": "# Summary\n\nGoogle has released its latest Gemini model, marketing it as a workhorse for coding and cybersecurity work.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-30\n\n**[Read the full story →](https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/)**"
-  },
-  {
-    "id": "rss-valor-atreides-and-sequoia-back-ai-start-1790856637438-1",
-    "title": "Valor, Atreides, and Sequoia back AI startup Flow Engineering at $750M valuation",
-    "subtitle": "Flow Engineering, which is bringing AI agents to hardware design, also landed Roelof Botha as an angel investor and…",
-    "color": "yellow",
-    "date": "2026-09-30",
-    "content": "# Summary\n\nFlow Engineering, which is bringing AI agents to hardware design, also landed Roelof Botha as an angel investor and…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-09-30\n\n**[Read the full story →](https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/)**"
   }
 ]
