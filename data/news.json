@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-pretend-you-re-sitting-at-elizabeth-holm-1791548540998-0",
+    "title": "Pretend you’re sitting at Elizabeth Holmes’ desk on this weirdly detailed website",
+    "subtitle": "With over a thousand emails, slides, texts, and documents from the United States v. Elizabeth Holmes trial, Extend…",
+    "color": "yellow",
+    "date": "2026-10-08",
+    "content": "# Summary\n\nWith over a thousand emails, slides, texts, and documents from the United States v. Elizabeth Holmes trial, Extend…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-08\n\n**[Read the full story →](https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/)**"
+  },
+  {
+    "id": "rss-fired-openai-safety-researchers-dispute--1791548540998-1",
+    "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
+    "subtitle": "Three fired OpenAI safety researchers dispute allegations of mishandling sensitive information, warning in an open…",
+    "color": "yellow",
+    "date": "2026-10-08",
+    "content": "# Summary\n\nThree fired OpenAI safety researchers dispute allegations of mishandling sensitive information, warning in an open…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-08\n\n**[Read the full story →](https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/)**"
+  },
+  {
+    "id": "rss-ben-affleck-is-an-ai-nerd-and-the-intern-1791548540998-2",
+    "title": "Ben Affleck is an AI nerd, and the internet is impressed",
+    "subtitle": "Ben Affleck is going viral for his deep knowledge of AI, from neural networks and transformers to open weights. The…",
+    "color": "yellow",
+    "date": "2026-10-08",
+    "content": "# Summary\n\nBen Affleck is going viral for his deep knowledge of AI, from neural networks and transformers to open weights. The…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-08\n\n**[Read the full story →](https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/)**"
+  },
+  {
     "id": "rss-nous-research-confirms-it-hit-1-5b-valua-1791462874321-0",
     "title": "Nous Research confirms it hit $1.5B valuation, launches AI agents for business users",
     "subtitle": "The developer of Hermes Agent raised a $90 million Series B.",
@@ -134,29 +158,5 @@
     "color": "yellow",
     "date": "2026-10-02",
     "content": "# Summary\n\nApple says it will add new controls around macOS’s Full Disk Access permission, warning that increasingly capable AI…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-02\n\n**[Read the full story →](https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/)**"
-  },
-  {
-    "id": "rss-call-it-ai-call-it-super-intelligence-on-1791024851426-2",
-    "title": "Call it AI, call it Super Intelligence, only 2% of consumers are buying it",
-    "subtitle": "This week, the White House got&#160;nearly every&#160;major tech CEO in one room — Zuckerberg, Bezos, Musk, and…",
-    "color": "yellow",
-    "date": "2026-10-02",
-    "content": "# Summary\n\nThis week, the White House got&#160;nearly every&#160;major tech CEO in one room — Zuckerberg, Bezos, Musk, and…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-02\n\n**[Read the full story →](https://techcrunch.com/podcast/call-it-ai-call-it-super-intelligence-only-2-of-consumers-are-buying-it/)**"
-  },
-  {
-    "id": "rss-musk-s-ai-chatbot-grok-reportedly-encour-1790941227696-0",
-    "title": "Musk’s AI chatbot Grok reportedly encouraged Trump to capture Venezuela’s president",
-    "subtitle": "President Trump reportedly asked for Grok's opinion before invading Venezuela and capturing Nicolás Maduro.",
-    "color": "yellow",
-    "date": "2026-10-01",
-    "content": "# Summary\n\nPresident Trump reportedly asked for Grok's opinion before invading Venezuela and capturing Nicolás Maduro.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-01\n\n**[Read the full story →](https://techcrunch.com/2026/10/01/musks-ai-chatbot-grok-reportedly-encouraged-trump-to-capture-venezuelas-president/)**"
-  },
-  {
-    "id": "rss-chatgpt-can-now-virtually-try-on-clothes-1790941227696-1",
-    "title": "ChatGPT can now virtually try on clothes for you",
-    "subtitle": "OpenAI is rolling out new shopping features for ChatGPT that let users virtually try on clothing and accessories using…",
-    "color": "yellow",
-    "date": "2026-10-01",
-    "content": "# Summary\n\nOpenAI is rolling out new shopping features for ChatGPT that let users virtually try on clothing and accessories using…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-01\n\n**[Read the full story →](https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/)**"
   }
 ]
