@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-microsoft-s-satya-nadella-says-ai-models-1791719646939-0",
+    "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+    "subtitle": "In a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI.",
+    "color": "yellow",
+    "date": "2026-10-10",
+    "content": "# Summary\n\nIn a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-10\n\n**[Read the full story →](https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/)**"
+  },
+  {
+    "id": "rss-apple-discloses-deal-to-hire-team-and-li-1791719646939-1",
+    "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+    "subtitle": "Is Apple hoping to get into the AI-generated podcast business?",
+    "color": "yellow",
+    "date": "2026-10-10",
+    "content": "# Summary\n\nIs Apple hoping to get into the AI-generated podcast business?\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-10\n\n**[Read the full story →](https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/)**"
+  },
+  {
+    "id": "rss-3-days-to-techcrunch-disrupt-2026-meet-t-1791719646939-2",
+    "title": "3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream",
+    "subtitle": "TechCrunch Disrupt 2026 takes place October 13-15 in San Francisco. Over 300 startups will show what they’ve built to…",
+    "color": "yellow",
+    "date": "2026-10-10",
+    "content": "# Summary\n\nTechCrunch Disrupt 2026 takes place October 13-15 in San Francisco. Over 300 startups will show what they’ve built to…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-10\n\n**[Read the full story →](https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/)**"
+  },
+  {
     "id": "rss-anthropic-can-t-reliably-control-its-ai--1791632480852-0",
     "title": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
     "subtitle": "Anthropic said it \"turned off live internet access\" for \"all our internal evaluations\" until further notice.",
@@ -134,29 +158,5 @@
     "color": "yellow",
     "date": "2026-10-04",
     "content": "# Summary\n\nAI slop seems to be overwhelming bug bounty programs.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-04\n\n**[Read the full story →](https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/)**"
-  },
-  {
-    "id": "rss-can-super-intelligence-and-a-non-binding-1791205964024-2",
-    "title": "Can ‘super intelligence’ and a non-binding safety pact solve AI’s image problem?",
-    "subtitle": "On Equity, we discussed the Trump administration's attempts to rebrand AI.",
-    "color": "yellow",
-    "date": "2026-10-04",
-    "content": "# Summary\n\nOn Equity, we discussed the Trump administration's attempts to rebrand AI.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-04\n\n**[Read the full story →](https://techcrunch.com/2026/10/04/can-super-intelligence-and-a-non-binding-safety-pact-solve-ais-image-problem/)**"
-  },
-  {
-    "id": "rss-amazon-responds-to-data-center-backlash--1791113778237-0",
-    "title": "Amazon responds to data center backlash, says it no longer uses NDAs",
-    "subtitle": "The CEO of Amazon Web Services tried to push back against widespread suspicion of data centers.",
-    "color": "yellow",
-    "date": "2026-10-03",
-    "content": "# Summary\n\nThe CEO of Amazon Web Services tried to push back against widespread suspicion of data centers.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-03\n\n**[Read the full story →](https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/)**"
-  },
-  {
-    "id": "rss-openai-safety-employee-resigns-claiming--1791113778237-1",
-    "title": "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
-    "subtitle": "By his own admission, David Robinson is “something of a cliché”: an employee at a leading AI company who issues a dire…",
-    "color": "yellow",
-    "date": "2026-10-03",
-    "content": "# Summary\n\nBy his own admission, David Robinson is “something of a cliché”: an employee at a leading AI company who issues a dire…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-03\n\n**[Read the full story →](https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/)**"
   }
 ]
