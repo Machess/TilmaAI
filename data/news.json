@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-amex-introduces-a-framework-to-prevent-a-1791897415538-0",
+    "title": "Amex introduces a framework to prevent AI agents from making unauthorized purchases",
+    "subtitle": "American Express is introducing a new framework designed to ensure AI agents only make purchases their users have…",
+    "color": "yellow",
+    "date": "2026-10-13",
+    "content": "# Summary\n\nAmerican Express is introducing a new framework designed to ensure AI agents only make purchases their users have…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-13\n\n**[Read the full story →](https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/)**"
+  },
+  {
+    "id": "rss-just-5-years-in-interactive-chatbot-plat-1791897415538-1",
+    "title": "Just 5 years in, interactive chatbot platform Character.AI files for bankruptcy",
+    "subtitle": "The startup will sell some of its assets to Disney for $20 million.",
+    "color": "yellow",
+    "date": "2026-10-13",
+    "content": "# Summary\n\nThe startup will sell some of its assets to Disney for $20 million.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-13\n\n**[Read the full story →](https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/)**"
+  },
+  {
+    "id": "rss-meta-releases-its-first-frontier-model-m-1791897415538-2",
+    "title": "Meta releases its first frontier model, Muse Wonder",
+    "subtitle": "Where Muse Spark aimed to be a lightweight model that could perform at low latency, the Wonder models are larger and…",
+    "color": "yellow",
+    "date": "2026-10-12",
+    "content": "# Summary\n\nWhere Muse Spark aimed to be a lightweight model that could perform at low latency, the Wonder models are larger and…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-12\n\n**[Read the full story →](https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/)**"
+  },
+  {
     "id": "rss-former-plaud-exec-raises-26m-for-ai-app--1791813794845-0",
     "title": "Former Plaud exec raises $26M for AI app that listens to you in the background",
     "subtitle": "Ambi is releasing apps for iPhone, Mac, and Apple Watch that enables ambient capture",
@@ -134,29 +158,5 @@
     "color": "yellow",
     "date": "2026-10-06",
     "content": "# Summary\n\nOn Tuesday, Musubi announced a lightweight decision model made for real-time moderation called PolicyLM-1.7B, released…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-06\n\n**[Read the full story →](https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/)**"
-  },
-  {
-    "id": "rss-ai-computing-startup-lambda-to-raise-4b--1791375902579-2",
-    "title": "AI computing startup Lambda to raise $4B ahead of planned IPO",
-    "subtitle": "Nvidia-backed Lambda is raising up to $4 billion at a $14.5 billion pre-money valuation ahead of a planned 2027 IPO,…",
-    "color": "yellow",
-    "date": "2026-10-06",
-    "content": "# Summary\n\nNvidia-backed Lambda is raising up to $4 billion at a $14.5 billion pre-money valuation ahead of a planned 2027 IPO,…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-06\n\n**[Read the full story →](https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/)**"
-  },
-  {
-    "id": "rss-openai-will-start-watermarking-chatgpt-s-1791289919250-0",
-    "title": "OpenAI will start watermarking ChatGPT’s text in the EU",
-    "subtitle": "OpenAI will watermark ChatGPT and Codex text in the EU to comply with the AI Act. Editing can make the invisible marks…",
-    "color": "yellow",
-    "date": "2026-10-05",
-    "content": "# Summary\n\nOpenAI will watermark ChatGPT and Codex text in the EU to comply with the AI Act. Editing can make the invisible marks…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-05\n\n**[Read the full story →](https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/)**"
-  },
-  {
-    "id": "rss-reflection-debuts-beam-an-open-weight-ai-1791289919250-1",
-    "title": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost",
-    "subtitle": "Reflection is aiming Beam and future models at enterprises and sovereign nations. The pitch is to build “AI factories,”…",
-    "color": "yellow",
-    "date": "2026-10-05",
-    "content": "# Summary\n\nReflection is aiming Beam and future models at enterprises and sovereign nations. The pitch is to build “AI factories,”…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-05\n\n**[Read the full story →](https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/)**"
   }
 ]
