@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-meta-removes-language-that-raised-scrapi-1792318224964-0",
+    "title": "Meta removes language that raised scraping and AI training concerns",
+    "subtitle": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
+    "color": "yellow",
+    "date": "2026-10-17",
+    "content": "# Summary\n\nA Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-17\n\n**[Read the full story →](https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/)**"
+  },
+  {
+    "id": "rss-anthropic-says-its-workforce-has-become--1792318224964-1",
+    "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+    "subtitle": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
+    "color": "yellow",
+    "date": "2026-10-17",
+    "content": "# Summary\n\nThe composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-17\n\n**[Read the full story →](https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/)**"
+  },
+  {
+    "id": "rss-replit-makes-openai-its-default-over-ant-1792318224964-2",
+    "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+    "subtitle": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still…",
+    "color": "yellow",
+    "date": "2026-10-17",
+    "content": "# Summary\n\nOver the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-17\n\n**[Read the full story →](https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/)**"
+  },
+  {
     "id": "rss-replit-is-no-longer-working-with-anthrop-1792231032031-0",
     "title": "Replit is no longer working with Anthropic, CEO says",
     "subtitle": "Masad said the decision was made for a number of different reasons, including cost. Replit announced a partnership with…",
@@ -134,29 +158,5 @@
     "color": "yellow",
     "date": "2026-10-11",
     "content": "# Summary\n\nOn Equity, we debate the impact of data center moratoriums and whether the AI industry has a communication problem.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-11\n\n**[Read the full story →](https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/)**"
-  },
-  {
-    "id": "rss-these-execs-think-voice-ai-hasn-t-reache-1791813794845-2",
-    "title": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
-    "subtitle": "Voice AI's often misses important points for its context layer, and causes the whole pipeline to break",
-    "color": "yellow",
-    "date": "2026-10-11",
-    "content": "# Summary\n\nVoice AI's often misses important points for its context layer, and causes the whole pipeline to break\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-11\n\n**[Read the full story →](https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/)**"
-  },
-  {
-    "id": "rss-microsoft-s-satya-nadella-says-ai-models-1791719646939-0",
-    "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
-    "subtitle": "In a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI.",
-    "color": "yellow",
-    "date": "2026-10-10",
-    "content": "# Summary\n\nIn a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-10\n\n**[Read the full story →](https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/)**"
-  },
-  {
-    "id": "rss-apple-discloses-deal-to-hire-team-and-li-1791719646939-1",
-    "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
-    "subtitle": "Is Apple hoping to get into the AI-generated podcast business?",
-    "color": "yellow",
-    "date": "2026-10-10",
-    "content": "# Summary\n\nIs Apple hoping to get into the AI-generated podcast business?\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-10\n\n**[Read the full story →](https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/)**"
   }
 ]
