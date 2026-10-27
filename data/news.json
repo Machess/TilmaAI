@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-how-openai-turned-its-coding-tools-into--1793100075767-0",
+    "title": "How OpenAI turned its coding tools into dots, an always-on personal assistant",
+    "subtitle": "Alexander Embiricos, the OpenAI executive responsible for dots, never wants to have a meeting with someone else's AI…",
+    "color": "yellow",
+    "date": "2026-10-27",
+    "content": "# Summary\n\nAlexander Embiricos, the OpenAI executive responsible for dots, never wants to have a meeting with someone else's AI…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-27\n\n**[Read the full story →](https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/)**"
+  },
+  {
+    "id": "rss-cohere-says-alibaba-s-qwen-model-tried-t-1793100075767-1",
+    "title": "Cohere says Alibaba’s Qwen model tried to send a file to Beijing",
+    "subtitle": "An AI model said it wouldn’t use any tools, then tried to send something to a server in Beijing anyway, and while…",
+    "color": "yellow",
+    "date": "2026-10-27",
+    "content": "# Summary\n\nAn AI model said it wouldn’t use any tools, then tried to send something to a server in Beijing anyway, and while…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-27\n\n**[Read the full story →](https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/)**"
+  },
+  {
+    "id": "rss-anthropic-s-ipo-filing-reveals-its-strat-1793100075767-2",
+    "title": "Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked",
+    "subtitle": "Anthropic’s S-1 shows more than half of its $100,000-plus customers now use both the Claude Platform and a first-party…",
+    "color": "yellow",
+    "date": "2026-10-26",
+    "content": "# Summary\n\nAnthropic’s S-1 shows more than half of its $100,000-plus customers now use both the Claude Platform and a first-party…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-26\n\n**[Read the full story →](https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/)**"
+  },
+  {
     "id": "rss-grok-releases-the-first-seven-minutes-of-1793016028933-0",
     "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
     "subtitle": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
@@ -134,29 +158,5 @@
     "color": "yellow",
     "date": "2026-10-20",
     "content": "# Summary\n\nBefore you share the Netflix documentary \"AI Gone Rogue,\" take note. Clem Delangue, Hugging Face's co-founder who is…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-20\n\n**[Read the full story →](https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/)**"
-  },
-  {
-    "id": "rss-anthropic-s-cloud-partnerships-are-getti-1792580200403-2",
-    "title": "Anthropic’s cloud partnerships are getting messy",
-    "subtitle": "Anthropic is reportedly struggling to secure enough compute from cloud providers that increasingly view it as a…",
-    "color": "yellow",
-    "date": "2026-10-20",
-    "content": "# Summary\n\nAnthropic is reportedly struggling to secure enough compute from cloud providers that increasingly view it as a…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-20\n\n**[Read the full story →](https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/)**"
-  },
-  {
-    "id": "rss-mamdani-says-feds-have-abdicated-on-ai-u-1792493098103-0",
-    "title": "Mamdani says feds have abdicated on AI, urges New Yorkers to push back",
-    "subtitle": "Mayor Zohran Mamdani said Monday night that New Yorkers must resist the narrative that an AI takeover is inevitable and…",
-    "color": "yellow",
-    "date": "2026-10-20",
-    "content": "# Summary\n\nMayor Zohran Mamdani said Monday night that New Yorkers must resist the narrative that an AI takeover is inevitable and…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-20\n\n**[Read the full story →](https://techcrunch.com/2026/10/19/mamdani-says-feds-have-abdicated-on-ai-urges-new-yorkers-to-push-back/)**"
-  },
-  {
-    "id": "rss-nscale-and-anthropic-are-reportedly-in-t-1792493098103-1",
-    "title": "Nscale and Anthropic are reportedly in talks for yet another $45B compute deal",
-    "subtitle": "If the deal goes through, it would be the latest in a long string of giant compute deals Anthropic has struck over the…",
-    "color": "yellow",
-    "date": "2026-10-19",
-    "content": "# Summary\n\nIf the deal goes through, it would be the latest in a long string of giant compute deals Anthropic has struck over the…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-19\n\n**[Read the full story →](https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/)**"
   }
 ]
