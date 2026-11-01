@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-apple-ceo-says-the-company-doesn-t-want--1793536007795-0",
+    "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
+    "subtitle": "Apple's new CEO defended the company's current position in the AI landscape.",
+    "color": "yellow",
+    "date": "2026-10-31",
+    "content": "# Summary\n\nApple's new CEO defended the company's current position in the AI landscape.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-31\n\n**[Read the full story →](https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/)**"
+  },
+  {
+    "id": "rss-judge-allows-naacp-lawsuit-over-xai-data-1793536007795-1",
+    "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+    "subtitle": "An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.",
+    "color": "yellow",
+    "date": "2026-10-31",
+    "content": "# Summary\n\nAn NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-31\n\n**[Read the full story →](https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/)**"
+  },
+  {
+    "id": "rss-openai-reportedly-lowers-funding-target--1793536007795-2",
+    "title": "OpenAI reportedly lowers funding target for new round",
+    "subtitle": "OpenAI’s latest funding round doesn't seem to be living up to expectations.",
+    "color": "yellow",
+    "date": "2026-10-31",
+    "content": "# Summary\n\nOpenAI’s latest funding round doesn't seem to be living up to expectations.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-31\n\n**[Read the full story →](https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/)**"
+  },
+  {
     "id": "rss-nvidia-weighs-playing-the-cosigner-for-n-1793446182046-0",
     "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
     "subtitle": "When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the…",
@@ -134,29 +158,5 @@
     "color": "yellow",
     "date": "2026-10-25",
     "content": "# Summary\n\n\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-25\n\n**[Read the full story →](https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/)**"
-  },
-  {
-    "id": "rss-the-hottest-ai-wearables-and-gadgets-you-1793016028933-2",
-    "title": "The hottest AI wearables and gadgets you should know about",
-    "subtitle": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.",
-    "color": "yellow",
-    "date": "2026-10-25",
-    "content": "# Summary\n\nWe compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-25\n\n**[Read the full story →](https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/)**"
-  },
-  {
-    "id": "rss-the-ai-graveyard-a-running-list-of-proje-1792924151432-0",
-    "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-    "subtitle": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that…",
-    "color": "yellow",
-    "date": "2026-10-24",
-    "content": "# Summary\n\nFrom Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-24\n\n**[Read the full story →](https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/)**"
-  },
-  {
-    "id": "rss-block-s-new-voice-model-sounds-eerily-hu-1792924151432-1",
-    "title": "Block’s new voice model sounds eerily human",
-    "subtitle": "Block said that the voice model can run locally on a MacBook M4 Max",
-    "color": "yellow",
-    "date": "2026-10-24",
-    "content": "# Summary\n\nBlock said that the voice model can run locally on a MacBook M4 Max\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-24\n\n**[Read the full story →](https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/)**"
   }
 ]
