@@ -1,5 +1,29 @@
 [
   {
+    "id": "rss-openai-is-finally-merging-chatgpt-s-chat-1793629473908-0",
+    "title": "OpenAI is finally merging ChatGPT’s chat and Work tabs",
+    "subtitle": "OpenAI said that ChatGPT and Codex will draw usage from the same allocation pool after this change.",
+    "color": "yellow",
+    "date": "2026-11-02",
+    "content": "# Summary\n\nOpenAI said that ChatGPT and Codex will draw usage from the same allocation pool after this change.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-11-02\n\n**[Read the full story →](https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/)**"
+  },
+  {
+    "id": "rss-openai-might-rebrand-its-data-centers-as-1793629473908-1",
+    "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
+    "subtitle": "Data centers are deeply unpopular. But what if we called them something else?",
+    "color": "yellow",
+    "date": "2026-11-01",
+    "content": "# Summary\n\nData centers are deeply unpopular. But what if we called them something else?\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-11-01\n\n**[Read the full story →](https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/)**"
+  },
+  {
+    "id": "rss-ai-can-make-tech-ceos-lives-easier-what--1793629473908-2",
+    "title": "AI can make tech CEOs’ lives easier. What about everyone else?",
+    "subtitle": "On Equity, we discuss why tech CEO statements can seem so tone deaf.",
+    "color": "yellow",
+    "date": "2026-11-01",
+    "content": "# Summary\n\nOn Equity, we discuss why tech CEO statements can seem so tone deaf.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-11-01\n\n**[Read the full story →](https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/)**"
+  },
+  {
     "id": "rss-apple-ceo-says-the-company-doesn-t-want--1793536007795-0",
     "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
     "subtitle": "Apple's new CEO defended the company's current position in the AI landscape.",
@@ -134,29 +158,5 @@
     "color": "yellow",
     "date": "2026-10-27",
     "content": "# Summary\n\nAn AI model said it wouldn’t use any tools, then tried to send something to a server in Beijing anyway, and while…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-27\n\n**[Read the full story →](https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/)**"
-  },
-  {
-    "id": "rss-anthropic-s-ipo-filing-reveals-its-strat-1793100075767-2",
-    "title": "Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked",
-    "subtitle": "Anthropic’s S-1 shows more than half of its $100,000-plus customers now use both the Claude Platform and a first-party…",
-    "color": "yellow",
-    "date": "2026-10-26",
-    "content": "# Summary\n\nAnthropic’s S-1 shows more than half of its $100,000-plus customers now use both the Claude Platform and a first-party…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-26\n\n**[Read the full story →](https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/)**"
-  },
-  {
-    "id": "rss-grok-releases-the-first-seven-minutes-of-1793016028933-0",
-    "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
-    "subtitle": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
-    "color": "yellow",
-    "date": "2026-10-25",
-    "content": "# Summary\n\nThe footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-25\n\n**[Read the full story →](https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/)**"
-  },
-  {
-    "id": "rss-ai-delivers-zero-financial-payoff-to-mos-1793016028933-1",
-    "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
-    "subtitle": "\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero…",
-    "color": "yellow",
-    "date": "2026-10-25",
-    "content": "# Summary\n\n\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero…\n\n# About This Story\n\n* **Source:** TechCrunch\n* **Published:** 2026-10-25\n\n**[Read the full story →](https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/)**"
   }
 ]
